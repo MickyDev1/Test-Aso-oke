@@ -43,8 +43,8 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Email: info@asooke.com</li>
-              <li>Phone: +234 (0) 123 456 789</li>
-              <li>WhatsApp: +234 (0) 123 456 789</li>
+              <li>Phone: +234 (0) ** *** ****</li>
+              <li>WhatsApp: +234 (0) ** *** ****</li>
             </ul>
           </div>
 

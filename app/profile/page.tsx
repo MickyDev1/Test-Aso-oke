@@ -1,42 +1,42 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { useCart } from "@/lib/cart-context"
-import { User, Mail, Phone, MapPin, ArrowLeft, Package } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { useCart } from "@/lib/cart-context";
+import { User, Mail, Phone, MapPin, ArrowLeft, Package } from "lucide-react";
 
 export default function ProfilePage() {
-  const { orders } = useCart()
-  const [isEditing, setIsEditing] = useState(false)
+  const { orders } = useCart();
+  const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState({
-    name: "Chioma Okafor",
-    email: "chioma@example.com",
-    phone: "+234 (0)803 123 4567",
+    name: "Micky Dev",
+    email: "micky@example.com",
+    phone: "+234 (0)** *** ****",
     address: "123 Lekki Phase 1, Lagos, Nigeria",
-  })
+  });
 
-  const [editForm, setEditForm] = useState(profile)
+  const [editForm, setEditForm] = useState(profile);
 
   const handleSave = () => {
-    setProfile(editForm)
-    setIsEditing(false)
-  }
+    setProfile(editForm);
+    setIsEditing(false);
+  };
 
   const getStatusColor = (status: string) => {
     switch (status) {
       case "pending":
-        return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100"
+        return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-100";
       case "shipped":
-        return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100"
+        return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100";
       case "completed":
-        return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100"
+        return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100";
       default:
-        return "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100"
+        return "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100";
     }
-  }
+  };
 
   return (
     <div className="min-h-screen bg-background py-20 px-4">
@@ -60,7 +60,9 @@ export default function ProfilePage() {
                 <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <User className="h-10 w-10 text-primary" />
                 </div>
-                <h2 className="text-2xl font-serif font-bold">{profile.name}</h2>
+                <h2 className="text-2xl font-serif font-bold">
+                  {profile.name}
+                </h2>
               </div>
 
               {!isEditing ? (
@@ -69,7 +71,9 @@ export default function ProfilePage() {
                     <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="text-foreground font-medium">{profile.email}</p>
+                      <p className="text-foreground font-medium">
+                        {profile.email}
+                      </p>
                     </div>
                   </div>
 
@@ -77,7 +81,9 @@ export default function ProfilePage() {
                     <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Phone</p>
-                      <p className="text-foreground font-medium">{profile.phone}</p>
+                      <p className="text-foreground font-medium">
+                        {profile.phone}
+                      </p>
                     </div>
                   </div>
 
@@ -85,41 +91,59 @@ export default function ProfilePage() {
                     <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Address</p>
-                      <p className="text-foreground font-medium">{profile.address}</p>
+                      <p className="text-foreground font-medium">
+                        {profile.address}
+                      </p>
                     </div>
                   </div>
                 </div>
               ) : (
                 <div className="space-y-4 mb-6">
                   <div>
-                    <label className="block text-sm font-medium mb-1">Name</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Name
+                    </label>
                     <Input
                       value={editForm.name}
-                      onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, name: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-1">Email</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Email
+                    </label>
                     <Input
                       value={editForm.email}
-                      onChange={(e) => setEditForm({ ...editForm, email: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, email: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-1">Phone</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Phone
+                    </label>
                     <Input
                       value={editForm.phone}
-                      onChange={(e) => setEditForm({ ...editForm, phone: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, phone: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-1">Address</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Address
+                    </label>
                     <Input
                       value={editForm.address}
-                      onChange={(e) => setEditForm({ ...editForm, address: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, address: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
@@ -143,8 +167,8 @@ export default function ProfilePage() {
                   </Button>
                   <Button
                     onClick={() => {
-                      setEditForm(profile)
-                      setIsEditing(false)
+                      setEditForm(profile);
+                      setIsEditing(false);
                     }}
                     variant="outline"
                     className="flex-1"
@@ -168,9 +192,13 @@ export default function ProfilePage() {
             {orders.length === 0 ? (
               <Card className="p-12 text-center">
                 <Package className="h-16 w-16 mx-auto mb-4 text-muted-foreground opacity-50" />
-                <p className="text-lg text-muted-foreground mb-6">No orders yet</p>
+                <p className="text-lg text-muted-foreground mb-6">
+                  No orders yet
+                </p>
                 <Link href="/shop">
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Start Shopping</Button>
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    Start Shopping
+                  </Button>
                 </Link>
               </Card>
             ) : (
@@ -179,18 +207,29 @@ export default function ProfilePage() {
                   <Card key={order.id} className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 pb-4 border-b border-border">
                       <div>
-                        <h3 className="font-serif font-bold text-lg">{order.id}</h3>
-                        <p className="text-sm text-muted-foreground">{order.date}</p>
+                        <h3 className="font-serif font-bold text-lg">
+                          {order.id}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          {order.date}
+                        </p>
                       </div>
                       <div className="flex items-center gap-4 mt-4 md:mt-0">
                         <div className="text-right">
                           <p className="text-sm text-muted-foreground">Total</p>
                           <p className="text-2xl font-bold text-primary">
-                            ₦{(order.total + 2000 + Math.round(order.total * 0.075)).toLocaleString()}
+                            ₦
+                            {(
+                              order.total +
+                              2000 +
+                              Math.round(order.total * 0.075)
+                            ).toLocaleString()}
                           </p>
                         </div>
                         <span
-                          className={`px-3 py-1 rounded-full text-sm font-medium capitalize ${getStatusColor(order.status)}`}
+                          className={`px-3 py-1 rounded-full text-sm font-medium capitalize ${getStatusColor(
+                            order.status
+                          )}`}
                         >
                           {order.status}
                         </span>
@@ -199,7 +238,9 @@ export default function ProfilePage() {
 
                     {/* Order Items */}
                     <div className="space-y-3">
-                      <p className="text-sm font-semibold text-muted-foreground uppercase">Items</p>
+                      <p className="text-sm font-semibold text-muted-foreground uppercase">
+                        Items
+                      </p>
                       {order.items.map((item) => (
                         <div
                           key={item.id}
@@ -207,9 +248,13 @@ export default function ProfilePage() {
                         >
                           <div className="flex-1">
                             <p className="font-medium">{item.name}</p>
-                            <p className="text-sm text-muted-foreground">Qty: {item.quantity}</p>
+                            <p className="text-sm text-muted-foreground">
+                              Qty: {item.quantity}
+                            </p>
                           </div>
-                          <p className="font-semibold">₦{(item.price * item.quantity).toLocaleString()}</p>
+                          <p className="font-semibold">
+                            ₦{(item.price * item.quantity).toLocaleString()}
+                          </p>
                         </div>
                       ))}
                     </div>
@@ -221,5 +266,5 @@ export default function ProfilePage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

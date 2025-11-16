@@ -23,7 +23,7 @@ export default function ContactPage() {
               <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                <p className="text-muted-foreground">+234 (0) 123 456 789</p>
+                <p className="text-muted-foreground">+234 (0) ** *** ****</p>
               </div>
             </div>
 
@@ -91,7 +91,7 @@ export default function ContactPage() {
             style={{ border: 0 }}
             loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7444555555554!2d3.3666!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2b2b2b2b2d%3A0x2b2b2b2b2b2b2b2b!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1234567890123"
-            allowFullScreen=""
+            allowFullScreen={true}
             aria-hidden="false"
             tabIndex={0}
           ></iframe>
