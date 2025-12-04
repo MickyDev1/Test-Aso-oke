@@ -1,5 +1,5 @@
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function AboutPage() {
   return (
@@ -7,31 +7,44 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">Our Story</h1>
+          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
+            Our Story
+          </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Celebrating tradition, craftsmanship, and cultural heritage through authentic Aso-Oke fabrics.
+            Celebrating tradition, craftsmanship, and cultural heritage through
+            authentic Aso-Oke fabrics.
           </p>
         </div>
 
         {/* Brand Story */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <img src="/placeholder.svg?height=400&width=500" alt="Aso-Oke weaving" className="rounded-lg" />
+            <img
+              src="/placeholder.svg?height=400&width=500"
+              alt="Aso-Oke weaving"
+              className="rounded-lg"
+            />
           </div>
           <div>
-            <h2 className="text-4xl font-serif font-bold mb-6">The Art of Aso-Oke</h2>
+            <h2 className="text-4xl font-serif font-bold mb-6">
+              The Art of Aso-Oke
+            </h2>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              Aso-Oke, meaning "cloth from the top," is a handwoven textile with deep roots in Yoruba culture. For
-              generations, this fabric has been an essential part of traditional ceremonies, celebrations, and formal
-              attire.
+              Aso-Oke, meaning "cloth from the top," is a handwoven textile with
+              deep roots in Yoruba culture. For generations, this fabric has
+              been an essential part of traditional ceremonies, celebrations,
+              and formal attire.
             </p>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              Each piece is meticulously crafted using traditional looms, requiring exceptional skill and patience. The
-              vibrant colors and intricate patterns represent the weaver's creativity and cultural pride.
+              Each piece is meticulously crafted using traditional looms,
+              requiring exceptional skill and patience. The vibrant colors and
+              intricate patterns represent the weaver's creativity and cultural
+              pride.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Our mission is to preserve this ancient tradition while making it accessible to the modern world, ensuring
-              that future generations can appreciate this beautiful art form.
+              Our mission is to preserve this ancient tradition while making it
+              accessible to the modern world, ensuring that future generations
+              can appreciate this beautiful art form.
             </p>
           </div>
         </div>
@@ -39,26 +52,33 @@ export default function AboutPage() {
         {/* Mission, Vision, Values */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           <Card className="p-8">
-            <h3 className="text-2xl font-serif font-bold text-primary mb-4">Our Mission</h3>
+            <h3 className="text-2xl font-serif font-bold text-primary mb-4">
+              Our Mission
+            </h3>
             <p className="text-muted-foreground leading-relaxed">
-              To create exceptional, handcrafted Aso-Oke fabrics that honor tradition while celebrating contemporary
-              style and elegance.
+              To create exceptional, handcrafted Aso-Oke fabrics that honor
+              tradition while celebrating contemporary style and elegance.
             </p>
           </Card>
 
           <Card className="p-8">
-            <h3 className="text-2xl font-serif font-bold text-primary mb-4">Our Vision</h3>
+            <h3 className="text-2xl font-serif font-bold text-primary mb-4">
+              Our Vision
+            </h3>
             <p className="text-muted-foreground leading-relaxed">
-              To be the leading global destination for authentic, premium Aso-Oke fabrics, preserving cultural heritage
-              for generations to come.
+              To be the leading global destination for authentic, premium
+              Aso-Oke fabrics, preserving cultural heritage for generations to
+              come.
             </p>
           </Card>
 
           <Card className="p-8">
-            <h3 className="text-2xl font-serif font-bold text-primary mb-4">Our Values</h3>
+            <h3 className="text-2xl font-serif font-bold text-primary mb-4">
+              Our Values
+            </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Quality craftsmanship, cultural authenticity, sustainability, and customer satisfaction guide everything
-              we do.
+              Quality craftsmanship, cultural authenticity, sustainability, and
+              customer satisfaction guide everything we do.
             </p>
           </Card>
         </div>
@@ -67,21 +87,30 @@ export default function AboutPage() {
         <div className="bg-card rounded-lg p-12 mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="/placeholder.svg?height=400&width=400" alt="Founder" className="rounded-lg" />
+              <img
+                src="/placeholder.svg?height=400&width=400"
+                alt="Founder"
+                className="rounded-lg"
+              />
             </div>
             <div>
-              <h2 className="text-4xl font-serif font-bold mb-4">Meet Our Founder</h2>
+              <h2 className="text-4xl font-serif font-bold mb-4">
+                Meet Our Founder
+              </h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                With decades of experience in textile arts and cultural preservation, our founder has dedicated her life
-                to championing the craft of Aso-Oke weaving.
+                With decades of experience in textile arts and cultural
+                preservation, our founder has dedicated her life to championing
+                the craft of Aso-Oke weaving.
               </p>
               <blockquote className="text-xl font-serif italic text-primary mb-8">
-                "Every thread tells a story. Every color carries meaning. Aso-Oke isn't just fabric—it's cultural memory
-                woven into cloth."
+                "Every thread tells a story. Every color carries meaning.
+                Aso-Oke isn't just fabric—it's cultural memory woven into
+                cloth."
               </blockquote>
               <p className="text-muted-foreground leading-relaxed">
-                Her passion for maintaining traditional techniques while innovating for modern markets has made us a
-                trusted name in authentic Aso-Oke fabrics worldwide.
+                Her passion for maintaining traditional techniques while
+                innovating for modern markets has made us a trusted name in
+                authentic Aso-Oke fabrics worldwide.
               </p>
             </div>
           </div>
@@ -89,32 +118,44 @@ export default function AboutPage() {
 
         {/* Craftsmanship */}
         <div className="mb-20">
-          <h2 className="text-4xl font-serif font-bold mb-12 text-center">Our Craftsmanship</h2>
+          <h2 className="text-4xl font-serif font-bold mb-12 text-center">
+            Our Craftsmanship
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
               {
                 title: "Quality Materials",
-                description: "We source the finest cotton and materials to ensure durability and vibrancy.",
+                description:
+                  "We source the finest cotton and materials to ensure durability and vibrancy.",
               },
               {
                 title: "Traditional Looms",
-                description: "Each piece is woven using time-honored techniques on traditional looms.",
+                description:
+                  "Each piece is woven using time-honored techniques on traditional looms.",
               },
               {
                 title: "Attention to Detail",
-                description: "Every pattern is carefully executed for perfect alignment and beauty.",
+                description:
+                  "Every pattern is carefully executed for perfect alignment and beauty.",
               },
               {
                 title: "Cultural Authenticity",
-                description: "We honor traditional patterns while embracing modern design sensibilities.",
+                description:
+                  "We honor traditional patterns while embracing modern design sensibilities.",
               },
             ].map((craft, index) => (
               <Card key={index} className="p-6">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
-                  <span className="text-primary font-serif font-bold text-lg">{index + 1}</span>
+                  <span className="text-primary font-serif font-bold text-lg">
+                    {index + 1}
+                  </span>
                 </div>
-                <h3 className="font-serif font-bold text-lg mb-3">{craft.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{craft.description}</p>
+                <h3 className="font-serif font-bold text-lg mb-3">
+                  {craft.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {craft.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -122,16 +163,21 @@ export default function AboutPage() {
 
         {/* CTA */}
         <div className="text-center py-12">
-          <h2 className="text-3xl font-serif font-bold mb-6">Experience the Difference</h2>
+          <h2 className="text-3xl font-serif font-bold mb-6">
+            Experience the Difference
+          </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-            Explore our collection and discover why discerning customers choose authentic Aso-Oke for their most
-            important occasions.
+            Explore our collection and discover why discerning customers choose
+            authentic Aso-Oke for their most important occasions.
           </p>
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+          >
             Shop Our Collection
           </Button>
         </div>
       </div>
     </div>
-  )
+  );
 }

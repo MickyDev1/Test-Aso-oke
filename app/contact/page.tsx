@@ -23,7 +23,7 @@ export default function ContactPage() {
               <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-semibold text-lg mb-2">Phone</h3>
-                <p className="text-muted-foreground">+234 (0) ** *** ****</p>
+                <p className="text-muted-foreground">+234 80 3351 9937</p>
               </div>
             </div>
 
@@ -48,11 +48,11 @@ export default function ContactPage() {
               <div>
                 <h3 className="font-semibold text-lg mb-2">Hours</h3>
                 <p className="text-muted-foreground text-sm">
-                  Monday - Friday: 9:00 AM - 6:00 PM
+                  Monday - Friday: 9:00 AM - 8:00 PM
                   <br />
-                  Saturday: 10:00 AM - 4:00 PM
+                  Saturday: 10:00 AM - 5:30 PM
                   <br />
-                  Sunday: Closed
+                  Sunday: Closed/ but you can still place orders online.
                 </p>
               </div>
             </div>

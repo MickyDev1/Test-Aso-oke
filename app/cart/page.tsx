@@ -1,19 +1,20 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { useCart } from "@/lib/cart-context"
-import { Trash2, ShoppingBag, ArrowLeft } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { useCart } from "@/lib/cart-context";
+import { Trash2, ShoppingBag, ArrowLeft } from "lucide-react";
 
 export default function CartPage() {
-  const { cartItems, removeFromCart, updateQuantity, cartTotal, placeOrder } = useCart()
+  const { cartItems, removeFromCart, updateQuantity, cartTotal, placeOrder } =
+    useCart();
 
   const handleCheckout = () => {
-    if (cartItems.length === 0) return
-    placeOrder()
-    alert("Order placed successfully!")
-  }
+    if (cartItems.length === 0) return;
+    placeOrder();
+    alert("Order placed successfully!");
+  };
 
   return (
     <div className="min-h-screen bg-background py-20 px-4">
@@ -33,9 +34,13 @@ export default function CartPage() {
           /* Empty Cart */
           <Card className="p-12 text-center">
             <ShoppingBag className="h-16 w-16 mx-auto mb-4 text-muted-foreground opacity-50" />
-            <p className="text-xl text-muted-foreground mb-6">Your cart is empty</p>
+            <p className="text-xl text-muted-foreground mb-6">
+              Your cart is empty
+            </p>
             <Link href="/shop">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Continue Shopping</Button>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                Continue Shopping
+              </Button>
             </Link>
           </Card>
         ) : (
@@ -56,9 +61,15 @@ export default function CartPage() {
 
                     {/* Product Details */}
                     <div className="flex-1">
-                      <h3 className="font-serif font-semibold text-lg mb-2">{item.name}</h3>
-                      <p className="text-muted-foreground text-sm mb-4">{item.description}</p>
-                      <p className="text-primary font-bold text-lg">₦{item.price.toLocaleString()}</p>
+                      <h3 className="font-serif font-semibold text-lg mb-2">
+                        {item.name}
+                      </h3>
+                      <p className="text-muted-foreground text-sm mb-4">
+                        {item.description}
+                      </p>
+                      <p className="text-primary font-bold text-lg">
+                        ₦{item.price.toLocaleString()}
+                      </p>
                     </div>
 
                     {/* Quantity & Remove */}
@@ -72,14 +83,20 @@ export default function CartPage() {
 
                       <div className="flex items-center gap-2 bg-muted px-3 py-2 rounded-lg">
                         <button
-                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                          onClick={() =>
+                            updateQuantity(item.id, item.quantity - 1)
+                          }
                           className="text-foreground hover:text-primary font-bold"
                         >
                           −
                         </button>
-                        <span className="w-6 text-center font-semibold">{item.quantity}</span>
+                        <span className="w-6 text-center font-semibold">
+                          {item.quantity}
+                        </span>
                         <button
-                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                          onClick={() =>
+                            updateQuantity(item.id, item.quantity + 1)
+                          }
                           className="text-foreground hover:text-primary font-bold"
                         >
                           +
@@ -104,12 +121,16 @@ export default function CartPage() {
             {/* Order Summary */}
             <div>
               <Card className="p-6 sticky top-24">
-                <h2 className="text-2xl font-serif font-bold mb-6">Order Summary</h2>
+                <h2 className="text-2xl font-serif font-bold mb-6">
+                  Order Summary
+                </h2>
 
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Subtotal</span>
-                    <span className="font-semibold">₦{cartTotal.toLocaleString()}</span>
+                    <span className="font-semibold">
+                      ₦{cartTotal.toLocaleString()}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Shipping</span>
@@ -117,13 +138,20 @@ export default function CartPage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Tax</span>
-                    <span className="font-semibold">₦{Math.round(cartTotal * 0.075).toLocaleString()}</span>
+                    <span className="font-semibold">
+                      ₦{Math.round(cartTotal * 0.075).toLocaleString()}
+                    </span>
                   </div>
 
                   <div className="pt-4 border-t border-border flex justify-between text-lg">
                     <span className="font-bold">Total</span>
                     <span className="font-bold text-primary">
-                      ₦{(cartTotal + 2000 + Math.round(cartTotal * 0.075)).toLocaleString()}
+                      ₦
+                      {(
+                        cartTotal +
+                        2000 +
+                        Math.round(cartTotal * 0.075)
+                      ).toLocaleString()}
                     </span>
                   </div>
                 </div>
@@ -137,7 +165,11 @@ export default function CartPage() {
                 </Button>
 
                 <Link href="/shop" className="block">
-                  <Button variant="outline" className="w-full bg-transparent" size="lg">
+                  <Button
+                    variant="outline"
+                    className="w-full bg-transparent"
+                    size="lg"
+                  >
                     Continue Shopping
                   </Button>
                 </Link>
@@ -147,5 +179,5 @@ export default function CartPage() {
         )}
       </div>
     </div>
-  )
+  );
 }
