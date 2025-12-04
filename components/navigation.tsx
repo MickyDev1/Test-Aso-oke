@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Menu, X, ShoppingCart, User } from "lucide-react"
-import { useCart } from "@/lib/cart-context"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { useState } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Menu, X, ShoppingCart, User } from "lucide-react";
+import { useCart } from "@/lib/cart-context";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const { cartItems } = useCart()
+  const [isOpen, setIsOpen] = useState(false);
+  const { cartItems } = useCart();
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -17,7 +17,7 @@ export default function Navigation() {
     { href: "/about", label: "About" },
     { href: "/testimonials", label: "Testimonials" },
     { href: "/contact", label: "Contact" },
-  ]
+  ];
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -25,7 +25,9 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="text-2xl font-bold font-serif text-primary">ASO-OKE</div>
+            <div className="text-2xl font-bold font-serif text-primary">
+              ASO-OKE
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,7 +53,12 @@ export default function Navigation() {
               </Button>
             </Link>
             <Link href="/cart">
-              <Button variant="ghost" size="icon" className="relative" title="Shopping Cart">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="relative"
+                title="Shopping Cart"
+              >
                 <ShoppingCart className="h-5 w-5" />
                 {cartItems.length > 0 && (
                   <span className="absolute top-1 right-1 h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">
@@ -63,7 +70,11 @@ export default function Navigation() {
 
             {/* Mobile Menu Button */}
             <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -85,5 +96,5 @@ export default function Navigation() {
         )}
       </div>
     </nav>
-  )
+  );
 }

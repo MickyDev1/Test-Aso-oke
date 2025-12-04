@@ -1,10 +1,10 @@
 export interface Product {
-  id: number
-  name: string
-  price: number
-  description: string
-  image: string
-  rating: number
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+  image: string;
+  rating: number;
 }
 
 export const PRODUCTS: Product[] = [
@@ -12,7 +12,8 @@ export const PRODUCTS: Product[] = [
     id: 1,
     name: "Royal Blue Aso-Oke",
     price: 45000,
-    description: "Premium handcrafted royal blue Aso-Oke fabric with intricate patterns",
+    description:
+      "Premium handcrafted royal blue Aso-Oke fabric with intricate patterns",
     image: "/royal-blue-aso-oke-fabric-handcrafted.jpg",
     rating: 5,
   },
@@ -20,7 +21,8 @@ export const PRODUCTS: Product[] = [
     id: 2,
     name: "White Classic Aso-Oke",
     price: 38000,
-    description: "Elegant white Aso-Oke with traditional embroidery and craftsmanship",
+    description:
+      "Elegant white Aso-Oke with traditional embroidery and craftsmanship",
     image: "/white-aso-oke-fabric-classic.jpg",
     rating: 5,
   },
@@ -36,7 +38,8 @@ export const PRODUCTS: Product[] = [
     id: 4,
     name: "Sky Blue Aso-Oke",
     price: 40000,
-    description: "Fresh sky blue Aso-Oke perfect for celebrations and special occasions",
+    description:
+      "Fresh sky blue Aso-Oke perfect for celebrations and special occasions",
     image: "/sky-blue-aso-oke-fabric-light.jpg",
     rating: 5,
   },
@@ -44,7 +47,8 @@ export const PRODUCTS: Product[] = [
     id: 5,
     name: "White & Blue Combo Aso-Oke",
     price: 50000,
-    description: "Stunning white base with blue patterns - limited edition piece",
+    description:
+      "Stunning white base with blue patterns - limited edition piece",
     image: "/white-blue-combination-aso-oke-fabric.jpg",
     rating: 5,
   },
@@ -56,4 +60,4 @@ export const PRODUCTS: Product[] = [
     image: "/cobalt-deep-blue-aso-oke-fabric.jpg",
     rating: 5,
   },
-]
+];

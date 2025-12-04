@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Star } from "lucide-react"
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Star } from "lucide-react";
 
 const testimonials = [
   {
@@ -58,33 +58,35 @@ const testimonials = [
     rating: 5,
     date: "June 2025",
   },
-]
+];
 
 export default function TestimonialsPage() {
-  const [showForm, setShowForm] = useState(false)
+  const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     rating: 5,
     message: "",
-  })
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Testimonial submitted:", formData)
-    setFormData({ name: "", email: "", rating: 5, message: "" })
-    setShowForm(false)
-  }
+    e.preventDefault();
+    console.log("Testimonial submitted:", formData);
+    setFormData({ name: "", email: "", rating: 5, message: "" });
+    setShowForm(false);
+  };
 
   return (
     <div className="min-h-screen py-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">Customer Testimonials</h1>
+          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
+            Customer Testimonials
+          </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hear from our satisfied customers who have experienced the beauty and quality of our authentic Aso-Oke
-            fabrics.
+            Hear from our satisfied customers who have experienced the beauty
+            and quality of our authentic Aso-Oke fabrics.
           </p>
         </div>
 
@@ -97,7 +99,9 @@ export default function TestimonialsPage() {
                   <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed min-h-24">"{testimonial.text}"</p>
+              <p className="text-muted-foreground mb-6 leading-relaxed min-h-24">
+                "{testimonial.text}"
+              </p>
               <div className="flex items-center gap-4">
                 <img
                   src={testimonial.image || "/placeholder.svg"}
@@ -106,7 +110,9 @@ export default function TestimonialsPage() {
                 />
                 <div>
                   <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-xs text-muted-foreground">{testimonial.date}</p>
+                  <p className="text-xs text-muted-foreground">
+                    {testimonial.date}
+                  </p>
                 </div>
               </div>
             </Card>
@@ -115,10 +121,12 @@ export default function TestimonialsPage() {
 
         {/* Submission Section */}
         <div className="bg-card rounded-lg p-12 text-center">
-          <h2 className="text-3xl font-serif font-bold mb-4">Share Your Experience</h2>
+          <h2 className="text-3xl font-serif font-bold mb-4">
+            Share Your Experience
+          </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            We love hearing from our customers! Share your testimonial and help others discover the beauty of authentic
-            Aso-Oke.
+            We love hearing from our customers! Share your testimonial and help
+            others discover the beauty of authentic Aso-Oke.
           </p>
 
           {!showForm ? (
@@ -130,19 +138,26 @@ export default function TestimonialsPage() {
               Submit Your Testimonial
             </Button>
           ) : (
-            <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-6">
+            <form
+              onSubmit={handleSubmit}
+              className="max-w-2xl mx-auto space-y-6"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Input
                   placeholder="Your Name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   required
                 />
                 <Input
                   type="email"
                   placeholder="Your Email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   required
                 />
               </div>
@@ -158,7 +173,11 @@ export default function TestimonialsPage() {
                       className="transition-colors"
                     >
                       <Star
-                        className={`h-8 w-8 ${star <= formData.rating ? "fill-primary text-primary" : "text-muted"}`}
+                        className={`h-8 w-8 ${
+                          star <= formData.rating
+                            ? "fill-primary text-primary"
+                            : "text-muted"
+                        }`}
                       />
                     </button>
                   ))}
@@ -168,7 +187,9 @@ export default function TestimonialsPage() {
               <Textarea
                 placeholder="Share your experience with our Aso-Oke fabrics..."
                 value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
                 required
                 rows={5}
               />
@@ -196,5 +217,5 @@ export default function TestimonialsPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
