@@ -10,9 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-serif font-bold text-primary mb-4">
-              ASO-OKE
-            </h3>
+            <h3 className="text-xl font-serif font-bold text-primary mb-4">ASO-OKE</h3>
             <p className="text-sm text-muted-foreground">
               Authentic handcrafted Aso-Oke fabrics. Tradition woven in style.
             </p>
@@ -25,7 +23,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/shop"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   Shop
                 </Link>
@@ -33,7 +31,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   About Us
                 </Link>
@@ -41,9 +39,17 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-muted-foreground hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/login"
+                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                >
+                  Sign In
                 </Link>
               </li>
             </ul>
@@ -96,3 +102,4 @@ export default function Footer() {
     </footer>
   );
 }
+

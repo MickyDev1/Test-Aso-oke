@@ -121,4 +121,22 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Enhanced cursor pointer for all interactive elements including product cards */
+  button,
+  a,
+  [role="button"],
+  input[type="submit"],
+  input[type="button"],
+  label[for],
+  select,
+  [onclick] {
+    cursor: pointer;
+  }
+
+  /* Add cursor pointer to cards with hover effects (product cards) */
+  .hover\:shadow-lg:hover,
+  .group:hover {
+    cursor: pointer;
+  }
 }

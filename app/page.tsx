@@ -36,17 +36,17 @@ const featuredProducts = [
 
 const testimonials = [
   {
-    name: "Chioma Okafor",
+    name: "Micky Dev",
     text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments!",
     rating: 5,
   },
   {
-    name: "Amara Adeleke",
+    name: "Micky Dev",
     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable.",
     rating: 5,
   },
   {
-    name: "Folake Adeyemi",
+    name: "Olatoye",
     text: "Best purchase I've made. The colors are vibrant and the fabric feels premium!",
     rating: 5,
   },
