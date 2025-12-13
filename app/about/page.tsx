@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <img
-              src="/placeholder.svg?height=400&width=500"
+              src="/public/iPhone 16 Pro (1).png"
               alt="Aso-Oke weaving"
               className="rounded-lg"
             />
