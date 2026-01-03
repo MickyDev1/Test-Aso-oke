@@ -10,7 +10,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-serif font-bold text-primary mb-4">ASO-OKE</h3>
+            <h3 className="text-xl font-serif font-bold text-primary mb-4">
+              ASO-OKE
+            </h3>
             <p className="text-sm text-muted-foreground">
               Authentic handcrafted Aso-Oke fabrics. Tradition woven in style.
             </p>
@@ -102,4 +104,3 @@ export default function Footer() {
     </footer>
   );
 }
-

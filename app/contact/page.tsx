@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">Get In Touch</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have questions about our Aso-Oke fabrics? We're here to help.
+            Have questions about our Aso-Oke fabrics? We're here to help. Whether you need assistance with your order, want to learn more about our products, or just want to say hello, feel free to reach out. Our team is dedicated to providing you with the best service possible.
           </p>
         </div>
 
