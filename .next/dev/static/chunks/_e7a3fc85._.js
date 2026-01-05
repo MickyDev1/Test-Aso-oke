@@ -150,7 +150,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 const db = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$firestore$40$4$2e$9$2e$3_$40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$firestore$2f$dist$2f$index$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFirestore"])(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$firebase$2e$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["app"]);
-const WHATSAPP_NUMBER = "2348012345678"; // <-- change to your business WhatsApp number (no +)
+const WHATSAPP_NUMBER = "2349121166895"; // <-- change to your business WhatsApp number (no +)
 function buildWhatsAppMessage(params) {
     const { orderId, items, subtotal, shippingFee, vat, total } = params;
     const lines = items.map((i)=>`• ${i.name} x${i.quantity} — ₦${(i.price * i.quantity).toLocaleString()}`);
@@ -208,7 +208,7 @@ function CartPage() {
                 vat,
                 total
             });
-            const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+            const waUrl = `https://wa.me/${+2349121166895}?text=${text}`;
             window.location.href = waUrl;
         // Optional: you can also redirect user to /profile after WhatsApp opens
         // router.push("/profile");

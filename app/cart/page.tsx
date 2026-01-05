@@ -12,7 +12,7 @@ import { auth, app } from "@/lib/firebase.client";
 
 const db = getFirestore(app);
 
-const WHATSAPP_NUMBER = "2348012345678"; // <-- change to your business WhatsApp number (no +)
+const WHATSAPP_NUMBER = "2349121166895"; // <-- change to your business WhatsApp number (no +)
 
 function buildWhatsAppMessage(params: {
   orderId: string;
@@ -99,7 +99,7 @@ export default function CartPage() {
         total,
       });
 
-      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+      const waUrl = `https://wa.me/${+2349121166895}?text=${text}`;
       window.location.href = waUrl;
 
       // Optional: you can also redirect user to /profile after WhatsApp opens
