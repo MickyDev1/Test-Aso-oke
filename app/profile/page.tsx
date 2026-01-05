@@ -12,10 +12,10 @@ export default function ProfilePage() {
   const { orders } = useCart();
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState({
-    name: "Micky Dev",
-    email: "micky@example.com",
-    phone: "+234 (0)** *** ****",
-    address: "123 Lekki Phase 1, Lagos, Nigeria",
+    name: "eef4efff-3c7a-4d6b-8f3d",
+    email: "**@**.com",
+    phone: "0123456789",
+    address: "street address, city, country",
   });
 
   const [editForm, setEditForm] = useState(profile);
@@ -46,7 +46,7 @@ export default function ProfilePage() {
           <Link href="/">
             <Button variant="ghost" size="sm" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
-              Back
+              Back to Home
             </Button>
           </Link>
           <h1 className="text-4xl font-serif font-bold">My Profile</h1>

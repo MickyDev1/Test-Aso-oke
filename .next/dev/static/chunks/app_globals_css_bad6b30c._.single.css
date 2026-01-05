@@ -83,6 +83,7 @@
     --font-sans: "Lato", "Lato Fallback";
     --font-serif: "Playfair Display", "Playfair Display Fallback";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-red-500: #fb2c36;
     --color-yellow-100: #fef9c2;
     --color-yellow-800: #874b00;
     --color-yellow-900: #733e0a;
@@ -140,6 +141,7 @@
 
   @supports (color: lab(0% 0 0)) {
     :root, :host {
+      --color-red-500: lab(55.4814% 75.0732 48.8528);
       --color-yellow-100: lab(97.3564% -4.51407 27.344);
       --color-yellow-800: lab(38.7484% 23.5833 51.4916);
       --color-yellow-900: lab(32.3865% 21.1273 38.5959);
@@ -769,10 +771,6 @@
     cursor: pointer;
   }
 
-  .cursor-text {
-    cursor: text;
-  }
-
   .auto-rows-min {
     grid-auto-rows: min-content;
   }
@@ -1246,6 +1244,10 @@
 
   .text-primary-foreground {
     color: var(--primary-foreground);
+  }
+
+  .text-red-500 {
+    color: var(--color-red-500);
   }
 
   .text-secondary-foreground {

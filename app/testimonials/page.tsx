@@ -12,19 +12,19 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Micky Dev", 
+    name: "Micky Dev",
     image: "/public/micky dev.jpg",
     text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments! The fabric drape is perfect and the colors are so vibrant.",
     rating: 5,
     date: "November 2025",
   },
   {
-    id: 2, 
+    id: 2,
     name: "Micky Dev",
     image: "/public/micky dev.jpg",
     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable. This is my third purchase and I keep coming back because of the attention to detail and quality.",
     rating: 4,
-    date: "October 2025",
+    date: "October 2070",
   },
   {
     id: 3,
