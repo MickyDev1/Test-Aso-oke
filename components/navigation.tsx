@@ -1,15 +1,37 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Menu, X, ShoppingCart, User } from "lucide-react"
-import { useCart } from "@/lib/cart-context"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Menu, X, ShoppingCart, User, LogOut } from "lucide-react";
+import { useCart } from "@/lib/cart-context";
+import { ThemeToggle } from "@/components/theme-toggle";
+
+import { onAuthStateChanged, signOut, type User as FirebaseUser } from "firebase/auth";
+import { auth } from "@/lib/firebase.client";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const { cartItems } = useCart()
+  const [isOpen, setIsOpen] = useState(false);
+  const { cartItems } = useCart();
+  const router = useRouter();
+
+  const [fbUser, setFbUser] = useState<FirebaseUser | null>(null);
+  const [authLoading, setAuthLoading] = useState(true);
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (u) => {
+      setFbUser(u);
+      setAuthLoading(false);
+    });
+    return () => unsub();
+  }, []);
+
+  const handleSignOut = async () => {
+    await signOut(auth);
+    setIsOpen(false);
+    router.push("/login");
+  };
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -17,7 +39,7 @@ export default function Navigation() {
     { href: "/about", label: "About" },
     { href: "/testimonials", label: "Testimonials" },
     { href: "/contact", label: "Contact" },
-  ]
+  ];
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -45,17 +67,43 @@ export default function Navigation() {
           <div className="flex items-center gap-4">
             <ThemeToggle />
 
-            <Link href="/signup" className="hidden md:block">
-              <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
-                Sign Up
-              </Button>
-            </Link>
+            {/* Only show auth buttons after auth state resolves */}
+            {!authLoading && !fbUser && (
+              <>
+                <Link href="/login" className="hidden md:block">
+                  <Button variant="ghost" size="sm">
+                    Sign In
+                  </Button>
+                </Link>
 
-            <Link href="/profile" className="cursor-pointer">
-              <Button variant="ghost" size="icon" title="My Profile" className="cursor-pointer">
-                <User className="h-5 w-5" />
-              </Button>
-            </Link>
+                <Link href="/signup" className="hidden md:block">
+                  <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
+                    Sign Up
+                  </Button>
+                </Link>
+              </>
+            )}
+
+            {!authLoading && fbUser && (
+              <>
+                <Link href="/profile" className="cursor-pointer">
+                  <Button variant="ghost" size="icon" title="My Profile" className="cursor-pointer">
+                    <User className="h-5 w-5" />
+                  </Button>
+                </Link>
+
+                <Button
+                  onClick={handleSignOut}
+                  variant="ghost"
+                  size="icon"
+                  title="Sign out"
+                  className="hidden md:inline-flex"
+                >
+                  <LogOut className="h-5 w-5" />
+                </Button>
+              </>
+            )}
+
             <Link href="/cart" className="cursor-pointer">
               <Button variant="ghost" size="icon" className="relative cursor-pointer" title="Shopping Cart">
                 <ShoppingCart className="h-5 w-5" />
@@ -87,14 +135,41 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link href="/signup" className="block px-4 py-2" onClick={() => setIsOpen(false)}>
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
-                Sign Up
-              </Button>
-            </Link>
+
+            {!authLoading && !fbUser && (
+              <>
+                <Link href="/login" className="block px-4 py-2" onClick={() => setIsOpen(false)}>
+                  <Button variant="outline" className="w-full">
+                    Sign In
+                  </Button>
+                </Link>
+
+                <Link href="/signup" className="block px-4 py-2" onClick={() => setIsOpen(false)}>
+                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
+                    Sign Up
+                  </Button>
+                </Link>
+              </>
+            )}
+
+            {!authLoading && fbUser && (
+              <>
+                <Link href="/profile" className="block px-4 py-2" onClick={() => setIsOpen(false)}>
+                  <Button variant="outline" className="w-full">
+                    My Profile
+                  </Button>
+                </Link>
+
+                <div className="px-4 py-2">
+                  <Button onClick={handleSignOut} className="w-full">
+                    Sign Out
+                  </Button>
+                </div>
+              </>
+            )}
           </div>
         )}
       </div>
     </nav>
-  )
+  );
 }

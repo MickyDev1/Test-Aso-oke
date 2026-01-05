@@ -1,19 +1,113 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useCart } from "@/lib/cart-context";
 import { Trash2, ShoppingBag, ArrowLeft } from "lucide-react";
 
-export default function CartPage() {
-  const { cartItems, removeFromCart, updateQuantity, cartTotal, placeOrder } =
-    useCart();
+import { addDoc, collection, serverTimestamp, getFirestore } from "firebase/firestore";
+import { auth, app } from "@/lib/firebase.client";
 
-  const handleCheckout = () => {
+const db = getFirestore(app);
+
+const WHATSAPP_NUMBER = "2348012345678"; // <-- change to your business WhatsApp number (no +)
+
+function buildWhatsAppMessage(params: {
+  orderId: string;
+  items: Array<{ name: string; price: number; quantity: number }>;
+  subtotal: number;
+  shippingFee: number;
+  vat: number;
+  total: number;
+}) {
+  const { orderId, items, subtotal, shippingFee, vat, total } = params;
+
+  const lines = items.map(
+    (i) =>
+      `• ${i.name} x${i.quantity} — ₦${(i.price * i.quantity).toLocaleString()}`
+  );
+
+  const message =
+    `Hello Aso-Oke Store 👋\n\n` +
+    `I’d like to place an order.\n\n` +
+    `Order ID: ${orderId}\n\n` +
+    `Items:\n${lines.join("\n")}\n\n` +
+    `Subtotal: ₦${subtotal.toLocaleString()}\n` +
+    `Shipping: ₦${shippingFee.toLocaleString()}\n` +
+    `VAT (7.5%): ₦${vat.toLocaleString()}\n` +
+    `Total: ₦${total.toLocaleString()}\n\n` +
+    `Please confirm availability. Once confirmed, kindly send a Paystack/Flutterwave payment link.\n`;
+
+  return encodeURIComponent(message);
+}
+
+export default function CartPage() {
+  const router = useRouter();
+  const { cartItems, removeFromCart, updateQuantity, cartTotal } = useCart();
+
+  const handleCheckout = async () => {
     if (cartItems.length === 0) return;
-    placeOrder();
-    alert("Order placed successfully!");
+
+    const user = auth.currentUser;
+    if (!user) {
+      router.push("/login");
+      return;
+    }
+
+    // Totals (same logic you already show)
+    const subtotal = cartTotal;
+    const shippingFee = 2000;
+    const vat = Math.round(subtotal * 0.075);
+    const total = subtotal + shippingFee + vat;
+
+    try {
+      // 1) Create order in Firestore
+      const ref = await addDoc(collection(db, "orders"), {
+        userId: user.uid,
+        customerName: user.displayName || "",
+        customerEmail: user.email || "",
+        items: cartItems.map((i) => ({
+          id: i.id,
+          name: i.name,
+          price: i.price,
+          quantity: i.quantity,
+          image: i.image || "",
+        })),
+        subtotal,
+        shippingFee,
+        vat,
+        total,
+        status: "pending", // pending -> confirmed -> paid -> shipped -> completed
+        channel: "whatsapp",
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp(),
+      });
+
+      // 2) Open WhatsApp with message containing the order ID
+      const text = buildWhatsAppMessage({
+        orderId: ref.id,
+        items: cartItems.map((i) => ({
+          name: i.name,
+          price: i.price,
+          quantity: i.quantity,
+        })),
+        subtotal,
+        shippingFee,
+        vat,
+        total,
+      });
+
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+      window.location.href = waUrl;
+
+      // Optional: you can also redirect user to /profile after WhatsApp opens
+      // router.push("/profile");
+    } catch (err: any) {
+      console.error(err);
+      alert(err?.message || "Failed to create order. Please try again.");
+    }
   };
 
   return (
@@ -31,7 +125,6 @@ export default function CartPage() {
         </div>
 
         {cartItems.length === 0 ? (
-          /* Empty Cart */
           <Card className="p-12 text-center">
             <ShoppingBag className="h-16 w-16 mx-auto mb-4 text-muted-foreground opacity-50" />
             <p className="text-xl text-muted-foreground mb-6">
@@ -50,7 +143,6 @@ export default function CartPage() {
               {cartItems.map((item) => (
                 <Card key={item.id} className="p-6">
                   <div className="flex gap-6">
-                    {/* Product Image */}
                     <div className="w-24 h-24 flex-shrink-0 bg-muted rounded-lg overflow-hidden">
                       <img
                         src={item.image || "/placeholder.svg"}
@@ -59,7 +151,6 @@ export default function CartPage() {
                       />
                     </div>
 
-                    {/* Product Details */}
                     <div className="flex-1">
                       <h3 className="font-serif font-semibold text-lg mb-2">
                         {item.name}
@@ -72,7 +163,6 @@ export default function CartPage() {
                       </p>
                     </div>
 
-                    {/* Quantity & Remove */}
                     <div className="flex flex-col items-end justify-between">
                       <button
                         onClick={() => removeFromCart(item.id)}
@@ -105,7 +195,6 @@ export default function CartPage() {
                     </div>
                   </div>
 
-                  {/* Item Total */}
                   <div className="mt-4 pt-4 border-t border-border text-right">
                     <p className="text-sm text-muted-foreground">
                       Subtotal:{" "}
@@ -161,7 +250,7 @@ export default function CartPage() {
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mb-3"
                   size="lg"
                 >
-                  Place Order
+                  Proceed to WhatsApp Checkout
                 </Button>
 
                 <Link href="/shop" className="block">
