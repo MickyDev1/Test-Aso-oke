@@ -1,1 +1,28 @@
-[00:00:01.049] Server  LOG      ✓ Ready in 784ms
+[00:00:01.738] Server  LOG      ✓ Ready in 1377ms
+[00:05:13.746] Server  LOG      ✓ Compiled in 786ms
+[00:05:47.001] Server  LOG      ✓ Compiled in 123ms
+[00:05:51.064] Server  LOG      ✓ Compiled in 332ms
+[00:05:51.368] Browser ERROR   ./app/cart/page.tsx:102:38
+Parsing ecmascript source code failed
+  100 |       });
+  101 |
+> 102 |       const waUrl = `https://wa.me/${}?text=${text}`;
+      |                                      ^
+  103 |       window.location.href = waUrl;
+  104 |
+  105 |       // Optional: you can also redirect user to /profile after WhatsApp opens
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/cart/page.tsx [Client Component Browser]
+    ./app/cart/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/cart/page.tsx [Client Component SSR]
+    ./app/cart/page.tsx [Server Component]
+[00:05:53.581] Server  LOG      ✓ Compiled in 75ms
+[00:05:58.259] Server  LOG      ✓ Compiled in 146ms
+[00:06:01.646] Server  LOG      ✓ Compiled in 136ms
+[00:06:06.508] Server  LOG      ✓ Compiled in 115ms

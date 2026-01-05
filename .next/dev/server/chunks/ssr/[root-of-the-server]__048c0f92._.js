@@ -21,6 +21,8 @@ module.exports = mod;
 "use strict";
 
 __turbopack_context__.s([
+    "app",
+    ()=>app,
     "auth",
     ()=>auth
 ]);
@@ -31,14 +33,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$
 ;
 ;
 const firebaseConfig = {
-    apiKey: ("TURBOPACK compile-time value", "AIzaSyCP0aJ05HDt36X--iT0nk-EzIHY23aMsAg"),
+    apiKey: ("TURBOPACK compile-time value", "AIzaSyCPOaJO5HDt36X--iTOnk-EzIHY23aMsAg"),
     authDomain: ("TURBOPACK compile-time value", "aso-oke-store.firebaseapp.com"),
     projectId: ("TURBOPACK compile-time value", "aso-oke-store"),
     storageBucket: ("TURBOPACK compile-time value", "aso-oke-store.appspot.com"),
     messagingSenderId: ("TURBOPACK compile-time value", "129291301862"),
     appId: ("TURBOPACK compile-time value", "1:129291301862:web:1901364af37021b26d5c27")
 };
-const app = !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getApps"])().length ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["initializeApp"])(firebaseConfig) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getApp"])();
+console.log("API KEY IN APP:", firebaseConfig.apiKey);
+console.log("AUTH DOMAIN IN APP:", firebaseConfig.authDomain);
+const app = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getApps"])().length ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getApp"])() : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$app$2f$dist$2f$esm$2f$index$2e$esm$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["initializeApp"])(firebaseConfig);
 const auth = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$auth$40$1$2e$12$2e$0_$40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$node$2d$esm$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getAuth"])(app);
 }),
 "[project]/components/ui/input.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {

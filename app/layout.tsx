@@ -6,6 +6,7 @@ import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import { CartProvider } from "@/lib/cart-context"
 import { ThemeProvider } from "@/lib/theme-provider"
+import { Toaster } from "sonner";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -22,7 +23,6 @@ const lato = Lato({
 export const metadata: Metadata = {
   title: "Aso-Oke | Premium Handcrafted Fabrics & Fashion",
   description: "Discover authentic Aso-Oke handcrafted fabrics and fashion accessories. Tradition woven in style.",
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -37,6 +37,7 @@ export default function RootLayout({
           <CartProvider>
             <Navigation />
             <main>{children}</main>
+            <Toaster richColors position="top-center" />
             <Footer />
           </CartProvider>
         </ThemeProvider>

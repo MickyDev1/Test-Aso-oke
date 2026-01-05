@@ -4,8 +4,12 @@ import type React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth } from "@/lib/firebase";
+import { doc, serverTimestamp, setDoc, getFirestore } from "firebase/firestore";
+import { auth } from "@/lib/firebase.client";
+
+const db = getFirestore();
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -40,20 +44,36 @@ export default function SignupPage() {
     try {
       setLoading(true);
 
+      // 1) Create user in Firebase Auth
       const userCredential = await createUserWithEmailAndPassword(
         auth,
         formData.email,
         formData.password
       );
 
-      // Update display name (optional but clean)
+      // 2) Save name to Firebase Auth profile
       await updateProfile(userCredential.user, {
         displayName: formData.fullName,
       });
 
+      // 3) Save full profile to Firestore (users/{uid})
+      await setDoc(
+        doc(db, "users", userCredential.user.uid),
+        {
+          uid: userCredential.user.uid,
+          name: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          address: "",
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp(),
+        },
+        { merge: true }
+      );
+
       router.push("/profile");
     } catch (err: any) {
-      setError(err.message || "Something went wrong");
+      setError(err?.message || "Something went wrong");
     } finally {
       setLoading(false);
     }
@@ -70,7 +90,6 @@ export default function SignupPage() {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Error */}
           {error && <p className="text-sm text-red-500 text-center">{error}</p>}
 
           {/* Full Name */}
@@ -146,7 +165,7 @@ export default function SignupPage() {
                 onClick={() => setShowPassword(!showPassword)}
                 className="absolute right-3 top-1/2 -translate-y-1/2"
               >
-                {showPassword ? <EyeOff /> : <Eye />}
+                {showPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
               </button>
             </div>
           </div>
@@ -160,10 +179,7 @@ export default function SignupPage() {
                 type={showConfirmPassword ? "text" : "password"}
                 value={formData.confirmPassword}
                 onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    confirmPassword: e.target.value,
-                  })
+                  setFormData({ ...formData, confirmPassword: e.target.value })
                 }
                 className="pl-10 pr-10"
                 required
@@ -173,7 +189,7 @@ export default function SignupPage() {
                 onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                 className="absolute right-3 top-1/2 -translate-y-1/2"
               >
-                {showConfirmPassword ? <EyeOff /> : <Eye />}
+                {showConfirmPassword ? <EyeOff className="h-5 w-5" /> : <Eye className="h-5 w-5" />}
               </button>
             </div>
           </div>
@@ -184,9 +200,7 @@ export default function SignupPage() {
         </form>
 
         <div className="mt-6 text-center text-sm">
-          <span className="text-muted-foreground">
-            Already have an account?{" "}
-          </span>
+          <span className="text-muted-foreground">Already have an account? </span>
           <Link href="/login" className="text-primary font-medium">
             Sign in
           </Link>
