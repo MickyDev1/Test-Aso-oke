@@ -23,7 +23,7 @@ const testimonials = [
     name: "Micky Dev",
     image: "/public/micky dev.jpg",
     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable. This is my third purchase and I keep coming back because of the attention to detail and quality.",
-    rating: 4,
+    rating: 3,
     date: "October 2070",
   },
   {
@@ -200,7 +200,7 @@ export default function TestimonialsPage() {
                   size="lg"
                   className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Submit Testimonial
+                  Submit
                 </Button>
                 <Button
                   type="button"

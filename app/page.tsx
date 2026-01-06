@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Star } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Star } from "lucide-react";
 
 const featuredProducts = [
   {
@@ -32,7 +32,7 @@ const featuredProducts = [
     image: "/green-aso-oke-fabric-fresh-handwoven.jpg",
     rating: 5,
   },
-]
+];
 
 const testimonials = [
   {
@@ -50,7 +50,7 @@ const testimonials = [
     text: "Best purchase I've made. The colors are vibrant and the fabric feels premium!",
     rating: 5,
   },
-]
+];
 
 export default function Home() {
   return (
@@ -67,11 +67,15 @@ export default function Home() {
             Tradition Woven in Style
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-            Discover authentic handcrafted Aso-Oke fabrics that celebrate culture, craftsmanship, and timeless elegance.
+            Discover authentic handcrafted Aso-Oke fabrics that celebrate
+            culture, craftsmanship, and timeless elegance.
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/shop">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+              >
                 Shop Now
               </Button>
             </Link>
@@ -88,13 +92,20 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">Featured Collections</h2>
-            <p className="text-muted-foreground text-lg">Handpicked Aso-Oke pieces for every occasion</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+              Featured Collections
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Handpicked Aso-Oke pieces for every occasion
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuredProducts.map((product) => (
-              <Card key={product.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <Card
+                key={product.id}
+                className="overflow-hidden hover:shadow-lg transition-shadow"
+              >
                 <div className="relative h-64 bg-muted overflow-hidden group">
                   <img
                     src={product.image || "/placeholder.svg"}
@@ -103,16 +114,26 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-serif font-semibold text-lg mb-2">{product.name}</h3>
+                  <h3 className="font-serif font-semibold text-lg mb-2">
+                    {product.name}
+                  </h3>
                   <div className="flex gap-1 mb-4">
                     {[...Array(product.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                      <Star
+                        key={i}
+                        className="h-4 w-4 fill-primary text-primary"
+                      />
                     ))}
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-xl font-bold text-primary">{product.price}</span>
+                    <span className="text-xl font-bold text-primary">
+                      {product.price}
+                    </span>
                     <Link href={`/shop/${product.id}`}>
-                      <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                      <Button
+                        size="sm"
+                        className="bg-primary text-primary-foreground hover:bg-primary/90"
+                      >
                         View
                       </Button>
                     </Link>
@@ -129,20 +150,31 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="/aso-oke-weaving-process-traditional-craft-hands.jpg" alt="Aso-Oke weaving process" className="rounded-lg" />
+              <img
+                src="/aso-oke-weaving-process-traditional-craft-hands.jpg"
+                alt="Aso-Oke weaving process"
+                className="rounded-lg"
+              />
             </div>
             <div>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">The Art of Aso-Oke</h2>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+                The Art of Aso-Oke
+              </h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Aso-Oke is a handwoven textile that holds deep cultural significance in Yoruba tradition. Each piece is
-                meticulously crafted using traditional looms, representing generations of expertise and dedication.
+                Aso-Oke is a handwoven textile that holds deep cultural
+                significance in Yoruba tradition. Each piece is meticulously
+                crafted using traditional looms, representing generations of
+                expertise and dedication.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Our commitment to quality ensures that every fabric meets the highest standards of craftsmanship,
-                vibrant colors, and durability.
+                Our commitment to quality ensures that every fabric meets the
+                highest standards of craftsmanship, vibrant colors, and
+                durability.
               </p>
               <Link href="/about">
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Discover Our Story</Button>
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  Discover Our Story
+                </Button>
               </Link>
             </div>
           </div>
@@ -153,7 +185,9 @@ export default function Home() {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">What Our Customers Says</h2>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+              What Our Customers Says
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -161,10 +195,15 @@ export default function Home() {
               <Card key={index} className="p-8">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                    <Star
+                      key={i}
+                      className="h-4 w-4 fill-primary text-primary"
+                    />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed">"{testimonial.text}"</p>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  "{testimonial.text}"
+                </p>
                 <p className="font-semibold">{testimonial.name}</p>
               </Card>
             ))}
@@ -180,5 +219,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }

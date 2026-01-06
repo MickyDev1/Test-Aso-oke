@@ -46,14 +46,14 @@ export default function Footer() {
                   Contact
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/login"
                   className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   Sign In
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -61,7 +61,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: info@asooke.com</li>
+              <li>Email: aso.oke.house@gmail.com</li>
               <li>Phone: +234 (0) 80 335 19937</li>
               <li>WhatsApp: +234 (0) 80 335 19937</li>
             </ul>
