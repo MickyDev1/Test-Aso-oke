@@ -134,7 +134,7 @@ const featuredProducts = [
         name: "Royal Blue Aso-Oke",
         price: "₦45,000",
         image: "/blue-aso-oke-fabric-elegant-handcrafted.jpg",
-        rating: 5
+        rating: 3
     },
     {
         id: 2,

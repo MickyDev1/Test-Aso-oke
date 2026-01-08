@@ -8,14 +8,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Star } from "lucide-react";
+import Image from "next/image";
+import image from "../../public/micky dev.jpg";
 
 const testimonials = [
   {
     id: 1,
-    name: "Micky Dev",
+    name: "{image}",
     image: "/public/micky dev.jpg",
     text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments! The fabric drape is perfect and the colors are so vibrant.",
-    rating: 5,
+    rating: 4,
     date: "November 2025",
   },
   {
@@ -23,8 +25,8 @@ const testimonials = [
     name: "Micky Dev",
     image: "/public/micky dev.jpg",
     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable. This is my third purchase and I keep coming back because of the attention to detail and quality.",
-    rating: 3,
-    date: "October 2070",
+    rating: 4,
+    date: "October 2026",
   },
   {
     id: 3,
@@ -69,6 +71,10 @@ export default function TestimonialsPage() {
     message: "",
   });
 
+/**
+ * Handles form submission by logging the submitted testimonial data to the console,
+ * resetting the form data to its initial state, and hiding the form.
+ */
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Testimonial submitted:", formData);

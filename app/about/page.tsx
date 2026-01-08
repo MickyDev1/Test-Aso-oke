@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import image from "../../public/micky dev.jpg";
 
 export default function AboutPage() {
   return (
@@ -17,10 +19,12 @@ export default function AboutPage() {
         </div>
 
         {/* Brand Story */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12  items-center mb-20">
           <div>
-            <img
-              src="/public/iPhone 16 Pro (1).png"
+            <Image
+              src="/aso-oke-weaving.jpg"
+              width={600}
+              height={400}
               alt="Aso-Oke weaving"
               className="rounded-lg"
             />
@@ -88,7 +92,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="{image}"
                 alt="Founder"
                 className="rounded-lg"
               />
