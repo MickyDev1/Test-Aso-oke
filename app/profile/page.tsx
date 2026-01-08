@@ -27,7 +27,13 @@ import { auth } from "@/lib/firebase.client";
 import { getFirestore } from "firebase/firestore";
 const db = getFirestore();
 
-type OrderStatus = "pending" | "confirmed" | "paid" | "shipped" | "completed" | "cancelled";
+type OrderStatus =
+  | "pending"
+  | "confirmed"
+  | "paid"
+  | "shipped"
+  | "completed"
+  | "cancelled";
 
 function formatMoney(n: number) {
   return `₦${(n || 0).toLocaleString()}`;
@@ -100,7 +106,6 @@ export default function ProfilePage() {
         setProfile(p);
         setEditForm(p);
       }
-
       // Live orders listener (dynamic history)
       const q = query(
         collection(db, "orders"),
@@ -185,7 +190,9 @@ export default function ProfilePage() {
                 <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                   <User className="h-10 w-10 text-primary" />
                 </div>
-                <h2 className="text-2xl font-serif font-bold">{profile.name || "—"}</h2>
+                <h2 className="text-2xl font-serif font-bold">
+                  {profile.name || "—"}
+                </h2>
               </div>
 
               {!isEditing ? (
@@ -194,7 +201,9 @@ export default function ProfilePage() {
                     <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="text-foreground font-medium">{profile.email || "—"}</p>
+                      <p className="text-foreground font-medium">
+                        {profile.email || "—"}
+                      </p>
                     </div>
                   </div>
 
@@ -202,7 +211,9 @@ export default function ProfilePage() {
                     <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Phone</p>
-                      <p className="text-foreground font-medium">{profile.phone || "—"}</p>
+                      <p className="text-foreground font-medium">
+                        {profile.phone || "—"}
+                      </p>
                     </div>
                   </div>
 
@@ -210,44 +221,62 @@ export default function ProfilePage() {
                     <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <p className="text-sm text-muted-foreground">Address</p>
-                      <p className="text-foreground font-medium">{profile.address || "—"}</p>
+                      <p className="text-foreground font-medium">
+                        {profile.address || "—"}
+                      </p>
                     </div>
                   </div>
                 </div>
               ) : (
                 <div className="space-y-4 mb-6">
                   <div>
-                    <label className="block text-sm font-medium mb-1">Name</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Name
+                    </label>
                     <Input
                       value={editForm.name}
-                      onChange={(e) => setEditForm({ ...editForm, name: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, name: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium mb-1">Email</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Email
+                    </label>
                     <Input
                       value={editForm.email}
-                      onChange={(e) => setEditForm({ ...editForm, email: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, email: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium mb-1">Phone</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Phone
+                    </label>
                     <Input
                       value={editForm.phone}
-                      onChange={(e) => setEditForm({ ...editForm, phone: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, phone: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium mb-1">Address</label>
+                    <label className="block text-sm font-medium mb-1">
+                      Address
+                    </label>
                     <Input
                       value={editForm.address}
-                      onChange={(e) => setEditForm({ ...editForm, address: e.target.value })}
+                      onChange={(e) =>
+                        setEditForm({ ...editForm, address: e.target.value })
+                      }
                       className="w-full"
                     />
                   </div>
@@ -290,7 +319,9 @@ export default function ProfilePage() {
             {orders.length === 0 ? (
               <Card className="p-12 text-center">
                 <Package className="h-16 w-16 mx-auto mb-4 text-muted-foreground opacity-50" />
-                <p className="text-lg text-muted-foreground mb-6">No orders yet</p>
+                <p className="text-lg text-muted-foreground mb-6">
+                  No orders yet
+                </p>
                 <Link href="/shop">
                   <Button>Start Shopping</Button>
                 </Link>
@@ -301,9 +332,12 @@ export default function ProfilePage() {
                   <Card key={order.id} className="p-6">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4 pb-4 border-b border-border">
                       <div>
-                        <h3 className="font-serif font-bold text-lg">{order.id}</h3>
+                        <h3 className="font-serif font-bold text-lg">
+                          {order.id}
+                        </h3>
                         <p className="text-sm text-muted-foreground">
-                          {order.createdAt?.toDate?.().toLocaleDateString?.() || ""}
+                          {order.createdAt?.toDate?.().toLocaleDateString?.() ||
+                            ""}
                         </p>
                       </div>
 
@@ -342,7 +376,9 @@ export default function ProfilePage() {
                             </p>
                           </div>
                           <p className="font-semibold">
-                            {formatMoney((item.price || 0) * (item.quantity || 0))}
+                            {formatMoney(
+                              (item.price || 0) * (item.quantity || 0)
+                            )}
                           </p>
                         </div>
                       ))}
