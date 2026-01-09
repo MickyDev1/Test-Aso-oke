@@ -3592,3 +3592,2822 @@ https://react.dev/link/hydration-mismatch
                   ...
 
 [00:29:59.486] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[08:17:18.356] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[08:19:02.728] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[08:19:27.100] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[08:19:36.370] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[08:20:22.101] Server  LOG      ✓ Compiled in 2s
+[08:20:32.032] Server  LOG      ✓ Compiled in 268ms
+[08:20:32.952] Server  LOG      ✓ Compiled in 63ms
+[08:20:35.706] Server  LOG      ✓ Compiled in 67ms
+[08:20:37.995] Server  LOG      ✓ Compiled in 82ms
+[08:20:44.943] Server  LOG      ✓ Compiled in 78ms
+[08:22:49.799] Server  LOG      ✓ Compiled in 100ms
+[08:25:28.878] Server  LOG      ✓ Compiled in 278ms
+[08:25:30.086] Server  LOG      ✓ Compiled in 70ms
+[08:25:32.171] Server  LOG      ✓ Compiled in 195ms
+[08:25:35.773] Server  LOG      ✓ Compiled in 57ms
+[08:25:37.892] Server  LOG      ✓ Compiled in 53ms
+[08:27:27.518] Server  LOG      ✓ Compiled in 228ms
+[08:42:01.425] Server  LOG      ✓ Compiled in 642ms
+[08:42:16.927] Server  LOG      ✓ Compiled in 49ms
+[08:42:19.602] Server  LOG      ✓ Compiled in 22ms
+[08:42:20.132] Server  LOG      ✓ Compiled in 223ms
+[08:42:32.054] Server  LOG      ✓ Compiled in 49ms
+[08:42:56.033] Server  LOG      ✓ Compiled in 93ms
+[08:42:58.321] Server  LOG      ✓ Compiled in 527ms
+[08:43:00.512] Server  LOG      ✓ Compiled in 57ms
+[08:43:04.593] Server  LOG      ✓ Compiled in 68ms
+[08:43:09.756] Server  LOG      ✓ Compiled in 50ms
+[08:43:33.655] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[08:46:35.124] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[08:46:38.711] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[08:51:05.554] Server  LOG      ○ Compiling /contact ...
+[09:24:57.379] Server  LOG      ✓ Compiled in 537ms
+[09:24:57.898] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:24:57.898] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:24:58.071] Server  LOG      ✓ Compiled in 151ms
+[09:24:58.216] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:24:58.216] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.801] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.801] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.801] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.801] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.802] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.928] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:25:01.929] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[09:26:47.592] Server  LOG      ✓ Compiled in 70ms
+[09:26:50.331] Server  LOG      ✓ Compiled in 103ms
+[09:26:51.682] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[09:26:51.896] Server  LOG      ✓ Compiled in 99ms
+[09:26:53.385] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:26:53.604] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[09:26:53.604] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[09:26:53.604] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:26:55.869] Server  LOG      ✓ Compiled in 72ms
+[09:26:56.133] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:26:56.849] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                  ...
+
+[09:26:56.849] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:26:56.853] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:26:56.853] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:26:56.853] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:26:57.221] Server  LOG      ✓ Compiled in 50ms
+[09:27:01.081] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:27:01.540] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:27:34.222] Server  LOG      ✓ Compiled in 54ms
+[09:27:34.713] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:27:34.714] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:27:34.714] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:27:34.793] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:27:34.793] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:27:34.793] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:27:34.793] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:27:34.793] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:27:35.762] Server  LOG      ✓ Compiled in 54ms
+[09:27:38.781] Server  LOG      ✓ Compiled in 174ms
+[09:27:40.258] Server  LOG      ✓ Compiled in 103ms
+[09:27:40.698] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:27:40.698] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:27:40.698] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:27:40.712] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:27:40.712] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:27:40.712] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:27:56.858] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:28:28.896] Server  LOG      ✓ Compiled in 110ms
+[09:28:29.284] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:28:29.284] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:28:29.284] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:28:36.459] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:28:36.750] Server  LOG      ✓ Compiled in 110ms
+[09:28:37.238] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:28:37.238] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:28:37.238] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:28:37.551] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:28:39.059] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:28:40.887] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:28:43.871] Server  LOG      ✓ Compiled in 205ms
+[09:28:44.374] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:28:44.401] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:28:45.431] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:28:46.118] Server  LOG      ✓ Compiled in 175ms
+[09:28:47.876] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:28:48.645] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:29:18.250] Server  LOG      ✓ Compiled in 49ms
+[09:29:19.276] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:19.334] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:29:19.334] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:29:19.334] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:29:19.355] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:20.476] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:22.773] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:47.550] Server  LOG      ✓ Compiled in 56ms
+[09:29:48.662] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:48.847] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:50.101] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:51.318] Server  LOG      ✓ Compiled in 395ms
+[09:29:55.664] Server  ERROR    ⨯ ReferenceError: I is not defined
+[09:29:55.884] Server  ERROR    ⨯ ReferenceError: I is not defined
+[09:29:56.136] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:29:59.500] Server  ERROR    ⨯ ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+
+
+[09:29:59.695] Browser ERROR   uncaughtError: ReferenceError: I is not defined
+[09:30:00.598] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.598] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.599] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.599] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.599] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.631] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.631] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.631] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.631] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:00.903] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.056] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.056] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.173] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.173] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.173] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.812] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.813] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.863] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:01.988] Browser ERROR   uncaughtError: Error: ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+
+
+[09:30:02.354] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.358] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.358] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.476] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.479] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.633] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.649] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.649] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:02.655] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import Im
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Expected ',', got 'export'
+[09:30:05.305] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import image from 
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Unexpected token `export`. Expected a string literal
+[09:30:05.306] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import image from 
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Unexpected token `export`. Expected a string literal
+[09:30:05.306] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import image from 
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Unexpected token `export`. Expected a string literal
+[09:30:05.306] Browser ERROR   ./app/about/page.tsx:6:1
+Parsing ecmascript source code failed
+  4 | import image from 
+  5 |
+> 6 | export default function AboutPage() {
+    | ^^^^^^
+  7 |   return (
+  8 |     <div className="min-h-screen py-12 px-4">
+  9 |       <div className="max-w-7xl mx-auto">
+
+Unexpected token `export`. Expected a string literal
+[09:30:08.217] Server  LOG      ✓ Compiled in 232ms
+[09:30:10.725] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:30:10.725] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:30:10.725] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:30:10.725] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:30:10.725] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:30:13.524] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:30:13.582] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:30:14.683] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:30:16.894] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:30:47.862] Server  LOG      ✓ Compiled in 43ms
+[09:30:50.565] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[09:30:50.705] Server  ERROR   An empty string ("") was passed to the src attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to src instead of an empty string.
+[09:30:50.715] Server  LOG      ✓ Compiled in 45ms
+[09:30:52.553] Server  ERROR    ⨯ Error: Image with src "{" is missing required "width" property.
+[09:30:52.828] Server  LOG      ✓ Compiled in 77ms
+[09:30:53.277] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[09:30:53.277] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:30:53.278] Browser ERROR   An empty string ("") was passed to the %s attribute. This may cause the browser to download the whole page again over the network. To fix this, either do not render the element at all or pass null to %s instead of an empty string. src src
+[09:30:53.278] Browser ERROR   Image is missing required "src" property: <img>
+[09:30:53.278] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:30:53.278] Browser ERROR   Image is missing required "src" property: <img>
+[09:30:53.278] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:30:53.278] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:30:53.278] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:30:56.997] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:31:05.245] Server  LOG      ✓ Compiled in 85ms
+[09:31:06.391] Server  ERROR    ⨯ Error: Image with src "{" is missing required "width" property.
+[09:31:06.404] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:31:06.404] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:31:06.404] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:31:07.345] Server  LOG      ✓ Compiled in 82ms
+[09:31:08.424] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:10.084] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:12.256] Server  LOG      ✓ Compiled in 164ms
+[09:31:13.427] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:13.455] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:13.464] Server  LOG      ✓ Compiled in 58ms
+[09:31:13.470] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:31:13.470] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:31:15.865] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:17.947] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:18.813] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:31:19.048] Server  LOG      ✓ Compiled in 151ms
+[09:31:19.643] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:19.661] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:19.670] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:31:19.670] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:31:19.670] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:31:20.721] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:20.979] Server  LOG      ✓ Compiled in 51ms
+[09:31:23.139] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:25.372] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:31:31.881] Browser ERROR   ./app/about/page.tsx:27:36
+Parsing ecmascript source code failed
+  25 |               src="/aso-oke-weaving.jpg"
+  26 |               alt="
+> 27 |               className="rounded-lg"
+     |                                    ^
+  28 |             />
+  29 |           </div>
+  30 |           <div>
+
+Unterminated string constant
+[09:31:31.881] Browser ERROR   ./app/about/page.tsx:27:36
+Parsing ecmascript source code failed
+  25 |               src="/aso-oke-weaving.jpg"
+  26 |               alt="
+> 27 |               className="rounded-lg"
+     |                                    ^
+  28 |             />
+  29 |           </div>
+  30 |           <div>
+
+Unterminated string constant
+[09:31:31.881] Browser ERROR   ./app/about/page.tsx:27:36
+Parsing ecmascript source code failed
+  25 |               src="/aso-oke-weaving.jpg"
+  26 |               alt="
+> 27 |               className="rounded-lg"
+     |                                    ^
+  28 |             />
+  29 |           </div>
+  30 |           <div>
+
+Unterminated string constant
+[09:31:31.936] Browser ERROR   ./app/about/page.tsx:27:36
+Parsing ecmascript source code failed
+  25 |               src="/aso-oke-weaving.jpg"
+  26 |               alt="
+> 27 |               className="rounded-lg"
+     |                                    ^
+  28 |             />
+  29 |           </div>
+  30 |           <div>
+
+Unterminated string constant
+[09:31:36.793] Server  LOG      ✓ Compiled in 57ms
+[09:31:37.295] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:31:37.295] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:31:37.295] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:31:37.640] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:37.661] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:39.037] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:31:40.702] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:32:16.652] Server  LOG      ✓ Compiled in 340ms
+[09:32:18.226] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:32:18.280] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "width" property.
+[09:32:19.109] Server  LOG      ✓ Compiled in 101ms
+[09:32:19.920] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving.jpg" is missing required "height" property.
+[09:32:22.100] Server  LOG      ✓ Compiled in 132ms
+[09:32:23.078] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:32:23.078] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:32:23.078] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:32:26.616] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:33:25.436] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:33:25.437] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:33:31.786] Server  LOG      ✓ Compiled in 1029ms
+[09:33:39.774] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:33:40.998] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1267.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:34:38.048] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:34:38.048] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:34:38.951] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:34:38.951] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:34:53.815] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:35:35.184] Server  LOG      ✓ Compiled in 1019ms
+[09:35:35.714] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:35:35.714] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:35:35.714] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:35:55.536] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:36:04.056] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[09:36:04.056] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:36:04.056] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:36:11.655] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:36:25.173] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:36:25.173] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:36:25.173] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:36:25.173] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:36:32.561] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:36:34.034] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:36:34.034] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:36:34.034] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:36:34.034] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[09:37:26.628] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/testimonials" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[09:37:26.630] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[09:41:55.316] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+
+[09:44:38.504] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" suppressHydrationWarning={true}>
+                          <body
+                            className="playfair_display_147b560f-module__lR97cW__variable lato_f88ed755-module__2_VnoG..."
+-                           data-new-gr-c-s-check-loaded="14.1268.0"
+-                           data-gr-ext-installed=""
+                          >
+                            ...
+                              <div className="grid grid-...">
+                                <div>
+                                <div>
+                                <div>
+                                <div>
+                                  <h4>
+                                  <div className="flex gap-2">
+                                    <input>
+                                    <Button>
++                                     <button
++                                       data-slot="button"
++                                       className={"inline-flex items-center justify-center gap-2 whitespace-nowrap r..."}
++                                     >
+-                                     <div
+-                                       data-lastpass-icon-root=""
+-                                       style={{position:"relative",height:"0px",width:"0px",display:"initial",float:"left"}}
+-                                     >
+                  ...
+

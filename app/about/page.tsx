@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import image from "../../public/micky dev.jpg";
+import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
 
 export default function AboutPage() {
   return (
@@ -22,11 +22,10 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12  items-center mb-20">
           <div>
             <Image
-              src="/aso-oke-weaving.jpg"
-              width={600}
-              height={400}
-              alt="Aso-Oke weaving"
+              src={image}
+              alt="Aso-Oke weaving process"
               className="rounded-lg"
+              placeholder="blur"
             />
           </div>
           <div>
@@ -91,11 +90,7 @@ export default function AboutPage() {
         <div className="bg-card rounded-lg p-12 mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <img
-                src="{image}"
-                alt="Founder"
-                className="rounded-lg"
-              />
+              <img src="/micky dev.jpg" alt="Founder" className="rounded-lg" />
             </div>
             <div>
               <h2 className="text-4xl font-serif font-bold mb-4">
