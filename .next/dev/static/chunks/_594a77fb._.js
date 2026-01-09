@@ -206,16 +206,16 @@ var _s = __turbopack_context__.k.signature();
 const testimonials = [
     {
         id: 1,
-        name: "{image}",
-        image: "/public/micky dev.jpg",
+        name: "Micky Dev",
+        image: "/micky dev.jpg",
         text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments! The fabric drape is perfect and the colors are so vibrant.",
         rating: 4,
-        date: "November 2025"
+        date: "November 1998"
     },
     {
         id: 2,
         name: "Micky Dev",
-        image: "/public/micky dev.jpg",
+        image: "/micky dev.jpg",
         text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable. This is my third purchase and I keep coming back because of the attention to detail and quality.",
         rating: 4,
         date: "October 2026"
@@ -223,7 +223,7 @@ const testimonials = [
     {
         id: 3,
         name: "Dev Stella ",
-        image: "/public/micky dev.jpg",
+        image: "/micky dev.jpg",
         text: "Best purchase I've made. The colors are vibrant and the fabric feels premium! Worth every naira. I recommend to all my friends.",
         rating: 5,
         date: "September 2025"
@@ -231,7 +231,7 @@ const testimonials = [
     {
         id: 4,
         name: "Olatoye",
-        image: "/public/micky dev.jpg",
+        image: "/micky dev.jpg",
         text: "The attention to detail is amazing. I could see the care that went into weaving each piece. Customer service was also excellent.",
         rating: 5,
         date: "August 2025"
@@ -239,7 +239,7 @@ const testimonials = [
     {
         id: 5,
         name: "Dev Whakee",
-        image: "/public/micky dev.jpg",
+        image: "/micky dev.jpg",
         text: "I bought this as a gift for my mother and she absolutely loves it. The presentation and quality are unmatched.",
         rating: 5,
         date: "July 2025"
@@ -247,7 +247,7 @@ const testimonials = [
     {
         id: 6,
         name: "Dev Zen",
-        image: "/public/micky dev.jpg",
+        image: "/micky dev.jpg",
         text: "This fabric is perfect for special occasions. The traditional patterns are stunning and authentic. Highly recommended!",
         rating: 5,
         date: "June 2025"
@@ -263,9 +263,9 @@ function TestimonialsPage() {
         message: ""
     });
     /**
- * Handles form submission by logging the submitted testimonial data to the console,
- * resetting the form data to its initial state, and hiding the form.
- */ const handleSubmit = (e)=>{
+   * Handles form submission by logging the submitted testimonial data to the console,
+   * resetting the form data to its initial state, and hiding the form.
+   */ const handleSubmit = (e)=>{
         e.preventDefault();
         console.log("Testimonial submitted:", formData);
         setFormData({

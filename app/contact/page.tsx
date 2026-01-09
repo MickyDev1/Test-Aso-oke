@@ -108,7 +108,7 @@ export default function ContactPage() {
               Instagram
             </Button>
             <Button variant="outline" size="lg">
-              Facebook
+              Whatsapp
             </Button>
             <Button variant="outline" size="lg">
               TikTok
