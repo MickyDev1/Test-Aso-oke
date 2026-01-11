@@ -294,7 +294,7 @@ function TestimonialsPage() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-xl text-muted-foreground max-w-3xl mx-auto",
-                            children: "Hear from our satisfied customers who have experienced the beauty and quality of our authentic Aso-Oke fabrics."
+                            children: "Hear from our satisfied customers who have experienced the beauty and quality of our authentic Aso-Oke fabrics. We value your feedback and look forward to serving you."
                         }, void 0, false, {
                             fileName: "[project]/app/testimonials/page.tsx",
                             lineNumber: 93,
