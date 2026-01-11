@@ -118,7 +118,7 @@ export default function CartPage() {
           <Link href="/shop">
             <Button variant="ghost" size="sm" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
-              Back to Shop
+              Back to Shop <ArrowLeft className="h-4 w-4" />
             </Button>
           </Link>
           <h1 className="text-4xl font-serif font-bold">Shopping Cart</h1>
@@ -128,11 +128,11 @@ export default function CartPage() {
           <Card className="p-12 text-center">
             <ShoppingBag className="h-16 w-16 mx-auto mb-4 text-muted-foreground opacity-50" />
             <p className="text-xl text-muted-foreground mb-6">
-              Your cart is empty
+              Your cart is empty 😔
             </p>
             <Link href="/shop">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Continue Shopping
+                Continue Shopping 
               </Button>
             </Link>
           </Card>
@@ -211,7 +211,7 @@ export default function CartPage() {
             <div>
               <Card className="p-6 sticky top-24">
                 <h2 className="text-2xl font-serif font-bold mb-6">
-                  Order Summary
+                  Order Summary 
                 </h2>
 
                 <div className="space-y-4 mb-6">
@@ -250,7 +250,7 @@ export default function CartPage() {
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mb-3"
                   size="lg"
                 >
-                  Proceed to WhatsApp Checkout
+                  Proceed to WhatsApp Checkout 
                 </Button>
 
                 <Link href="/shop" className="block">

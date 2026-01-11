@@ -68,7 +68,8 @@ export default function Home() {
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Discover authentic handcrafted Aso-Oke fabrics that celebrate
-            culture, craftsmanship, and timeless elegance.
+            culture, craftsmanship, and timeless elegance. Experience the art of
+            weaving with Aso-Oke.
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/shop">
@@ -96,7 +97,7 @@ export default function Home() {
               Featured Collections
             </h2>
             <p className="text-muted-foreground text-lg">
-              Handpicked Aso-Oke pieces for every occasion
+              Handpicked Aso-Oke pieces for every occasion and style.
             </p>
           </div>
 
@@ -164,12 +165,16 @@ export default function Home() {
                 Aso-Oke is a handwoven textile that holds deep cultural
                 significance in Yoruba tradition. Each piece is meticulously
                 crafted using traditional looms, representing generations of
-                expertise and dedication.
+                expertise and dedication. The intricate patterns and vibrant
+                colors of Aso-Oke reflect the rich heritage of Yoruba culture,
+                symbolizing tradition, craftsmanship, and cultural heritage.
               </p>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
                 Our commitment to quality ensures that every fabric meets the
                 highest standards of craftsmanship, vibrant colors, and
-                durability.
+                durability. We take pride in offering a wide range of Aso-Oke
+                products, including clothing, accessories, home decor, and more,
+                ensuring that you find the perfect piece for any occasion.
               </p>
               <Link href="/about">
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90">

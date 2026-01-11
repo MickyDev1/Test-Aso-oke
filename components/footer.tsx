@@ -15,6 +15,7 @@ export default function Footer() {
             </h3>
             <p className="text-sm text-muted-foreground">
               Authentic handcrafted Aso-Oke fabrics. Tradition woven in style.
+              Experience the art of weaving with Aso-Oke. Shop now.
             </p>
           </div>
 

@@ -92,7 +92,7 @@ export default function TestimonialsPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Hear from our satisfied customers who have experienced the beauty
-            and quality of our authentic Aso-Oke fabrics.
+            and quality of our authentic Aso-Oke fabrics. We value your feedback and look forward to serving you.
           </p>
         </div>
 
