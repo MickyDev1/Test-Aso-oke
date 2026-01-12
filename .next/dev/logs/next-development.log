@@ -1,20 +1,28 @@
-[00:00:01.071] Server  LOG      ✓ Ready in 773ms
-[00:00:07.751] Server  LOG      ○ Compiling / ...
-[00:02:06.590] Server  LOG      ✓ Compiled in 64ms
-[00:02:06.715] Browser ERROR   uncaughtError: ReferenceError: ArrowRight is not defined
-[00:02:11.986] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:02:11.987] Server  LOG      ✓ Compiled in 54ms
-[00:02:23.395] Server  LOG      ✓ Compiled in 90ms
-[00:02:24.999] Server  LOG      ✓ Compiled in 51ms
-[00:04:52.319] Server  LOG      ✓ Compiled in 46ms
-[00:04:54.329] Server  LOG      ✓ Compiled in 51ms
-[00:04:59.960] Server  LOG      ✓ Compiled in 57ms
-[00:05:07.008] Server  LOG      ✓ Compiled in 32ms
-[00:05:08.387] Server  LOG      ✓ Compiled in 61ms
-[00:05:09.642] Server  LOG      ✓ Compiled in 56ms
-[00:05:15.344] Server  LOG      ✓ Compiled in 56ms
-[00:05:17.169] Server  LOG      ✓ Compiled in 61ms
-[00:05:18.836] Server  LOG      ✓ Compiled in 51ms
-[00:06:06.778] Browser ERROR   [2026-01-09T16:57:19.115Z]  @firebase/firestore: Firestore (12.6.0): Uncaught Error in snapshot listener: FirebaseError: [code=failed-precondition]: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/aso-oke-store/firestore/indexes?create_composite=Ckxwcm9qZWN0cy9hc28tb2tlLXN0b3JlL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9vcmRlcnMvaW5kZXhlcy9fEAEaCgoGdXNlcklkEAEaDQoJY3JlYXRlZEF0EAIaDAoIX19uYW1lX18QAg
-[01:32:02.368] Server  LOG      ✓ Compiled in 1026ms
-[01:48:25.936] Server  LOG      ✓ Compiled in 86ms
+[00:00:01.219] Server  LOG      ✓ Ready in 927ms
+[00:00:43.377] Browser ERROR   [2026-01-11T22:58:05.683Z]  @firebase/firestore: Firestore (12.6.0): Uncaught Error in snapshot listener: FirebaseError: [code=failed-precondition]: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/aso-oke-store/firestore/indexes?create_composite=Ckxwcm9qZWN0cy9hc28tb2tlLXN0b3JlL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9vcmRlcnMvaW5kZXhlcy9fEAEaCgoGdXNlcklkEAEaDQoJY3JlYXRlZEF0EAIaDAoIX19uYW1lX18QAg
+[00:02:33.216] Browser ERROR   ./app/page.tsx:40:5
+Parsing ecmascript source code failed
+  38 |   {
+  39 |     id 
+> 40 |     name: "Micky Dev",
+     |     ^^^^
+  41 |     image: "/micky dev.jpg",
+  42 |     text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments!",
+  43 |     rating: 5,
+
+Unexpected token `name`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+[00:02:36.425] Server  LOG      ✓ Compiled in 58ms
+[00:02:42.291] Browser ERROR   ./app/page.tsx:47:5
+Parsing ecmascript source code failed
+  45 |   {
+  46 |     id 
+> 47 |     name: "Micky Dev",
+     |     ^^^^
+  48 |     image: "/micky dev.jpg",
+  49 |     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable.",
+  50 |     rating: 5,
+
+Unexpected token `name`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+[00:07:55.698] Server  LOG      ✓ Compiled in 572ms
+[00:12:24.955] Server  LOG      ✓ Compiled in 442ms
+[06:39:34.050] Browser ERROR   [2026-01-12T05:36:56.092Z]  @firebase/firestore: Firestore (12.6.0): Uncaught Error in snapshot listener: FirebaseError: [code=failed-precondition]: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/aso-oke-store/firestore/indexes?create_composite=Ckxwcm9qZWN0cy9hc28tb2tlLXN0b3JlL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9vcmRlcnMvaW5kZXhlcy9fEAEaCgoGdXNlcklkEAEaDQoJY3JlYXRlZEF0EAIaDAoIX19uYW1lX18QAg
