@@ -18,7 +18,7 @@ const testimonials = [
     image: "/micky dev.jpg",
     text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments! The fabric drape is perfect and the colors are so vibrant.",
     rating: 4,
-    date: "November 1998",
+    date: "November 2024",
   },
   {
     id: 2,
