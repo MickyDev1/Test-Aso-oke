@@ -1,28 +1,891 @@
-[00:00:01.219] Server  LOG      ✓ Ready in 927ms
-[00:00:43.377] Browser ERROR   [2026-01-11T22:58:05.683Z]  @firebase/firestore: Firestore (12.6.0): Uncaught Error in snapshot listener: FirebaseError: [code=failed-precondition]: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/aso-oke-store/firestore/indexes?create_composite=Ckxwcm9qZWN0cy9hc28tb2tlLXN0b3JlL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9vcmRlcnMvaW5kZXhlcy9fEAEaCgoGdXNlcklkEAEaDQoJY3JlYXRlZEF0EAIaDAoIX19uYW1lX18QAg
-[00:02:33.216] Browser ERROR   ./app/page.tsx:40:5
-Parsing ecmascript source code failed
-  38 |   {
-  39 |     id 
-> 40 |     name: "Micky Dev",
-     |     ^^^^
-  41 |     image: "/micky dev.jpg",
-  42 |     text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments!",
-  43 |     rating: 5,
+[00:00:01.247] Server  LOG      ✓ Ready in 930ms
+[01:08:29.731] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:08:29.731] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:43.167] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:43.187] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[01:32:46.403] Server  LOG      ✓ Compiled in 63ms
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[01:32:46.716] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[01:32:49.686] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[01:35:08.291] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:35:08.291] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:42.321] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:42.321] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:46.828] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:46.828] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.058] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.058] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.262] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.263] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.460] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.460] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.677] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:47.677] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:51.491] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:38:51.492] Browser ERROR   A param property was accessed directly with `params.id`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:39:52.455] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
-Unexpected token `name`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
-[00:02:36.425] Server  LOG      ✓ Compiled in 58ms
-[00:02:42.291] Browser ERROR   ./app/page.tsx:47:5
-Parsing ecmascript source code failed
-  45 |   {
-  46 |     id 
-> 47 |     name: "Micky Dev",
-     |     ^^^^
-  48 |     image: "/micky dev.jpg",
-  49 |     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable.",
-  50 |     rating: 5,
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
 
-Unexpected token `name`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
-[00:07:55.698] Server  LOG      ✓ Compiled in 572ms
-[00:12:24.955] Server  LOG      ✓ Compiled in 442ms
-[06:39:34.050] Browser ERROR   [2026-01-12T05:36:56.092Z]  @firebase/firestore: Firestore (12.6.0): Uncaught Error in snapshot listener: FirebaseError: [code=failed-precondition]: The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/aso-oke-store/firestore/indexes?create_composite=Ckxwcm9qZWN0cy9hc28tb2tlLXN0b3JlL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9vcmRlcnMvaW5kZXhlcy9fEAEaCgoGdXNlcklkEAEaDQoJY3JlYXRlZEF0EAIaDAoIX19uYW1lX18QAg
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
++                       hidden={true}
+-                       hidden={null}
+-                       className="simulator-pre-loader simulator"
+-                       aria-label="Loading"
+-                       role="status"
+                      >
+                        <__next_metadata_boundary__>
++                         <Suspense name="Next.Metadata">
+                    ...
+                  ...
+
+[03:09:16.080] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:16.080] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.090] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:18.091] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[03:09:20.624] Server  LOG      ✓ Compiled in 176ms
+[03:09:27.454] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[03:09:27.454] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:09:27.454] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:09:27.454] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:10:08.116] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:10:08.116] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:10:08.116] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:10:11.119] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:11:10.048] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.180] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.208] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.240] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.260] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.271] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.291] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.306] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.318] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.328] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.338] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.356] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.366] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.377] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.401] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.450] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.485] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.527] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.555] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:10.575] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:11.097] Browser ERROR   uncaughtError: ReferenceError: usePathname is not defined
+[03:11:11.101] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:11:25.391] Server  LOG      ✓ Compiled in 48ms
+[03:11:25.533] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:25.738] Server  ERROR    ⨯ ReferenceError: usePathname is not defined
+[03:11:27.081] Browser ERROR   uncaughtError: ReferenceError: usePathname is not defined
+[03:11:29.328] Server  LOG      ✓ Compiled in 403ms
+[03:11:29.463] Server  ERROR    ⨯ TypeError: (0 , _react.useContext) is not a function
+[03:11:32.084] Browser ERROR   uncaughtError: TypeError: (0 , _react.useContext) is not a function
+[03:11:32.084] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​RootLayout' cannot have a negative time stamp.
+[03:11:32.084] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:11:32.084] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:11:32.084] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:11:37.739] Server  ERROR    ⨯ TypeError: (0 , _react.useContext) is not a function
+[03:11:37.970] Browser ERROR   uncaughtError: TypeError: (0 , _react.useContext) is not a function
+[03:11:38.205] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​RootLayout' cannot have a negative time stamp.
+[03:11:38.355] Server  ERROR    ⨯ TypeError: (0 , _react.useContext) is not a function
+[03:11:38.472] Browser ERROR   uncaughtError: TypeError: (0 , _react.useContext) is not a function
+[03:11:38.667] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​RootLayout' cannot have a negative time stamp.
+[03:12:54.402] Server  ERROR    ⨯ TypeError: (0 , _react.useContext) is not a function
+[03:12:54.810] Browser ERROR   uncaughtError: TypeError: (0 , _react.useContext) is not a function
+[03:12:55.025] Server  ERROR    ⨯ TypeError: (0 , _react.useContext) is not a function
+[03:12:55.141] Browser ERROR   uncaughtError: TypeError: (0 , _react.useContext) is not a function
+[03:12:55.333] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​RootLayout' cannot have a negative time stamp.
+[03:13:15.616] Server  ERROR    ⨯ TypeError: (0 , _react.useContext) is not a function
+[03:13:15.802] Browser ERROR   uncaughtError: TypeError: (0 , _react.useContext) is not a function
+[03:13:16.089] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​RootLayout' cannot have a negative time stamp.
+[03:13:16.143] Server  ERROR    ⨯ TypeError: (0 , _react.useContext) is not a function
+[03:13:16.253] Browser ERROR   uncaughtError: TypeError: (0 , _react.useContext) is not a function
+[03:13:16.458] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​RootLayout' cannot have a negative time stamp.
+[03:14:48.149] Server  LOG      ✓ Compiled in 262ms
+[03:14:58.158] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[03:14:58.158] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[03:14:58.158] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:15:10.093] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[03:15:10.093] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[03:15:10.093] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:15:16.089] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[03:15:16.089] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:17:38.100] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:17:38.101] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:17:38.101] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:20:26.028] Server  LOG      ✓ Compiled in 353ms
+[03:20:27.088] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:20:37.542] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/signup" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
++                     <div hidden={true}>
+-                     {"\n        "}
+                    ...
+                  ...
+
+[03:20:37.542] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:21.110] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[03:23:26.199] Server  ERROR    ⨯ ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:23:26.344] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:26.344] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:26.344] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:23:26.345] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.044] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.044] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.044] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.044] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.048] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.061] Server  ERROR    ⨯ ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:23:27.228] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.228] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.825] Browser ERROR   uncaughtError: Error: ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[03:23:27.969] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.969] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:27.971] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:28.086] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:23:28.087] Browser ERROR   ./app/(main)/about/page.tsx:4:1
+Module not found: Can't resolve '../../public/aso-oke-weaving-process-traditional-craft-hands.jpg'
+  2 | import { Button } from "@/components/ui/button";
+  3 | import Image from "next/image";
+> 4 | import image from "../../public/aso-oke-weaving-process-traditional-craft-hands.jpg";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function AboutPage() {
+  7 |   return (
+
+https://nextjs.org/docs/messages/module-not-found
+[03:24:15.475] Server  LOG      ✓ Compiled in 77ms
+[03:24:15.656] Server  ERROR    ⨯ ReferenceError: image is not defined
+[03:24:15.667] Server  ERROR    ⨯ ReferenceError: image is not defined
+[03:24:16.462] Browser ERROR   uncaughtError: ReferenceError: image is not defined
+[03:24:21.559] Server  ERROR    ⨯ ReferenceError: image is not defined
+[03:24:21.998] Browser ERROR   uncaughtError: ReferenceError: image is not defined
+[03:24:21.998] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AboutPage' cannot have a negative time stamp.
+[03:24:22.049] Server  ERROR    ⨯ ReferenceError: image is not defined
+[03:24:22.385] Browser ERROR   uncaughtError: ReferenceError: image is not defined
+[03:24:22.385] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​AboutPage' cannot have a negative time stamp.
+[03:24:34.773] Browser ERROR   ./app/(main)/about/page.tsx:26:15
+Parsing ecmascript source code failed
+  24 |             <Image
+  25 |               src={}
+> 26 |               alt="Aso-Oke weaving process"
+     |               ^^^
+  27 |               className="rounded-lg"
+  28 |               placeholder="blur"
+  29 |             />
+
+Expected '</', got 'alt'
+[03:24:34.789] Browser ERROR   ./app/(main)/about/page.tsx:26:15
+Parsing ecmascript source code failed
+  24 |             <Image
+  25 |               src={}
+> 26 |               alt="Aso-Oke weaving process"
+     |               ^^^
+  27 |               className="rounded-lg"
+  28 |               placeholder="blur"
+  29 |             />
+
+Expected '</', got 'alt'
+[03:24:34.789] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:24:34.789] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:24:36.694] Browser ERROR   ./app/(main)/about/page.tsx:26:15
+Parsing ecmascript source code failed
+  24 |             <Image
+  25 |               src=
+> 26 |               alt="Aso-Oke weaving process"
+     |               ^^^
+  27 |               className="rounded-lg"
+  28 |               placeholder="blur"
+  29 |             />
+
+Expected '</', got 'alt'
+[03:24:36.695] Browser ERROR   ./app/(main)/about/page.tsx:26:15
+Parsing ecmascript source code failed
+  24 |             <Image
+  25 |               src=
+> 26 |               alt="Aso-Oke weaving process"
+     |               ^^^
+  27 |               className="rounded-lg"
+  28 |               placeholder="blur"
+  29 |             />
+
+Expected '</', got 'alt'
+[03:24:39.062] Server  LOG      ✓ Compiled in 50ms
+[03:24:39.337] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving-process-traditional-craft-hands.jpg" is missing required "width" property.
+[03:24:39.361] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving-process-traditional-craft-hands.jpg" is missing required "width" property.
+[03:24:39.837] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving-process-traditional-craft-hands.jpg" is missing required "width" property.
+[03:24:40.418] Server  ERROR    ⨯ Error: Image with src "/aso-oke-weaving-process-traditional-craft-hands.jpg" is missing required "width" property.
+[03:24:40.724] Browser ERROR   uncaughtError: Error: Image with src "/aso-oke-weaving-process-traditional-craft-hands.jpg" is missing required "width" property.
+[03:24:50.221] Browser ERROR   ./app/(main)/about/page.tsx:25:18
+Parsing ecmascript source code failed
+  23 |           <div>
+  24 |             <
+> 25 |               src="/aso-oke-weaving-process-traditional-craft-hands.jpg"
+     |                  ^
+  26 |               alt="Aso-Oke weaving process"
+  27 |               className="rounded-lg"
+  28 |               placeholder="blur"
+
+Expected '</', got '='
+[03:24:50.235] Browser ERROR   ./app/(main)/about/page.tsx:25:18
+Parsing ecmascript source code failed
+  23 |           <div>
+  24 |             <
+> 25 |               src="/aso-oke-weaving-process-traditional-craft-hands.jpg"
+     |                  ^
+  26 |               alt="Aso-Oke weaving process"
+  27 |               className="rounded-lg"
+  28 |               placeholder="blur"
+
+Expected '</', got '='
+[03:24:50.235] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:24:50.235] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:24:52.821] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:24:52.821] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:24:52.829] Server  LOG      ✓ Compiled in 91ms
+[03:24:53.746] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/about" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
++                       hidden={true}
+-                       hidden={null}
+-                       className="simulator-pre-loader simulator"
+-                       aria-label="Loading"
+-                       role="status"
+                      >
+                        <__next_metadata_boundary__>
++                         <Suspense name="Next.Metadata">
+                    ...
+                  ...
+
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:25:11.574] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:26:16.763] Server  LOG      ✓ Compiled in 65ms
+[03:28:13.826] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:28:13.826] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[03:28:14.821] Browser ERROR   uncaughtError: TypeError: Cannot read properties of null (reading 'removeChild')
+[03:28:59.802] Server  LOG      ✓ Compiled in 70ms
+[03:29:00.966] Server  LOG      ✓ Compiled in 29ms
+[03:29:07.010] Server  LOG      ✓ Compiled in 58ms
+[03:29:16.003] Server  LOG      ✓ Compiled in 59ms
+[03:29:17.983] Server  LOG      ✓ Compiled in 52ms
+[03:31:34.329] Server  LOG      ✓ Compiled in 60ms
+[03:31:35.428] Server  LOG      ✓ Compiled in 36ms
+[03:31:56.570] Server  LOG      ✓ Compiled in 69ms

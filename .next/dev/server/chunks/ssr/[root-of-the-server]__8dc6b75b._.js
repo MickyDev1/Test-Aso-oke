@@ -131,30 +131,30 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lu
 const featuredProducts = [
     {
         id: 1,
-        name: "Royal Blue Aso-Oke",
+        name: "Royal Purple Aso-Oke",
         price: "₦45,000",
-        image: "/blue-aso-oke-fabric-elegant-handcrafted.jpg",
-        rating: 3
+        image: "/purple2.jpg",
+        rating: 4
     },
     {
         id: 2,
-        name: "Gold Classic Aso-Oke",
+        name: " Royal Blue Aso-Oke",
         price: "₦38,000",
-        image: "/gold-aso-oke-fabric-luxury-traditional.jpg",
+        image: "/royalblue.jpg",
         rating: 5
     },
     {
         id: 3,
-        name: "Burgundy Heritage Aso-Oke",
+        name: "Black and White Aso-Oke",
         price: "₦42,000",
-        image: "/burgundy-aso-oke-fabric-rich-ornate.jpg",
+        image: "/blackandwhite.jpg",
         rating: 5
     },
     {
         id: 4,
-        name: "Green Mint Aso-Oke",
+        name: "Colored Aso-Oke",
         price: "₦40,000",
-        image: "/green-aso-oke-fabric-fresh-handwoven.jpg",
+        image: "/prodcut2.jpg",
         rating: 5
     }
 ];

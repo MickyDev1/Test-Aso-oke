@@ -38,7 +38,6 @@ export default function RootLayout({
             <Navigation />
             <main>{children}</main>
             <Toaster richColors position="top-center" />
-            <Footer />
           </CartProvider>
         </ThemeProvider>
       </body>
