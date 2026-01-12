@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/msi/Developer/Testing/Test-Aso-oke/app/api/debug-env/route.ts"],"sourcesContent":["import { NextResponse } from \"next/server\";\n\nexport const runtime = \"nodejs\";\n\nexport async function GET() {\n  return NextResponse.json({\n    hasResendKey: !!process.env.RESEND_API_KEY,\n    resendKeyPrefix: process.env.RESEND_API_KEY?.slice(0, 4) || null,\n    businessEmail: process.env.BUSINESS_EMAIL || null,\n    nodeEnv: process.env.NODE_ENV || null,\n  });\n}\n"],"names":[],"mappings":";;;;;;AAAA;;AAEO,MAAM,UAAU;AAEhB,eAAe;IACpB,OAAO,kTAAY,CAAC,IAAI,CAAC;QACvB,cAAc,CAAC,CAAC,QAAQ,GAAG,CAAC,cAAc;QAC1C,iBAAiB,QAAQ,GAAG,CAAC,cAAc,EAAE,MAAM,GAAG,MAAM;QAC5D,eAAe,QAAQ,GAAG,CAAC,cAAc,IAAI;QAC7C,SAAS,mDAAwB;IACnC;AACF"}}]
+}

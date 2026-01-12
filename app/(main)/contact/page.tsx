@@ -1,18 +1,66 @@
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+"use client";
+
+import { useState } from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { toast } from "sonner";
 
 export default function ContactPage() {
+  const [loading, setLoading] = useState(false);
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        toast.error(data?.error || "Message failed to send");
+        return;
+      }
+
+      toast.success("🎉 Delivered!", {
+  description: "Your message has been sent to our team. We’ll respond soon 😊",
+});
+
+
+      setForm({ name: "", email: "", subject: "", message: "" });
+    } catch (err: any) {
+      toast.error(err?.message || "Something went wrong");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen py-12 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">Get In Touch</h1>
+          <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
+            Get In Touch
+          </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have questions about our Aso-Oke fabrics? We're here to help. Whether you need assistance with your order, want to learn more about our products, or just want to say hello, feel free to reach out. Our team is dedicated to providing you with the best service possible. 
+            Have questions about our Aso-Oke fabrics? We’re here to help. Whether
+            you need assistance with your order, want to learn more about our
+            products, or just want to say hello, feel free to reach out.
           </p>
         </div>
 
@@ -52,7 +100,7 @@ export default function ContactPage() {
                   <br />
                   Saturday: 10:00 AM - 5:30 PM
                   <br />
-                  Sunday: Closed/ but you can still place orders online.
+                  Sunday: Closed (but you can still place orders online).
                 </p>
               </div>
             </div>
@@ -61,22 +109,51 @@ export default function ContactPage() {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="p-8">
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input placeholder="Your Name" required />
-                  <Input type="email" placeholder="Your Email" required />
+                  <Input
+                    placeholder="Your Name"
+                    required
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  />
+                  <Input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                    value={form.email}
+                    onChange={(e) =>
+                      setForm({ ...form, email: e.target.value })
+                    }
+                  />
                 </div>
 
-                <Input placeholder="Subject" required />
+                <Input
+                  placeholder="Subject"
+                  required
+                  value={form.subject}
+                  onChange={(e) =>
+                    setForm({ ...form, subject: e.target.value })
+                  }
+                />
 
-                <Textarea placeholder="Message" rows={6} required />
+                <Textarea
+                  placeholder="Message"
+                  rows={6}
+                  required
+                  value={form.message}
+                  onChange={(e) =>
+                    setForm({ ...form, message: e.target.value })
+                  }
+                />
 
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={loading}
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </Card>
@@ -91,17 +168,18 @@ export default function ContactPage() {
             style={{ border: 0 }}
             loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7444555555554!2d3.3666!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2b2b2b2b2d%3A0x2b2b2b2b2b2b2b2b!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1234567890123"
-            allowFullScreen={true}
+            allowFullScreen
             aria-hidden="false"
             tabIndex={0}
-          ></iframe>
+          />
         </div>
 
         {/* Social Links */}
         <div className="bg-card rounded-lg p-12 text-center">
           <h2 className="text-3xl font-serif font-bold mb-6">Follow Us</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Connect with us on social media for exclusive updates, behind-the-scenes content, and special offers. 
+            Connect with us on social media for exclusive updates,
+            behind-the-scenes content, and special offers.
           </p>
           <div className="flex justify-center gap-4">
             <Button variant="outline" size="lg">
@@ -117,5 +195,5 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
