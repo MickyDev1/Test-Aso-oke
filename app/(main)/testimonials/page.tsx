@@ -26,7 +26,7 @@ const testimonials = [
     image: "/micky dev.jpg",
     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable. This is my third purchase and I keep coming back because of the attention to detail and quality.",
     rating: 4,
-    date: "October 2026",
+    date: "January 2026",
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ const testimonials = [
     image: "/micky dev.jpg",
     text: "This fabric is perfect for special occasions. The traditional patterns are stunning and authentic. Highly recommended!",
     rating: 5,
-    date: "June 2025",
+    date: "May 2025",
   },
 ];
 
