@@ -36,17 +36,23 @@ const featuredProducts = [
 
 const testimonials = [
   {
+    // id : 1,
     name: "Micky Dev",
+    // image: "/micky dev.jpg",
     text: "The quality is exceptional. I wore this to my sister's wedding and received countless compliments!",
     rating: 5,
   },
   {
+    // id : 2,
     name: "Micky Dev",
+    // image: "/micky dev.jpg",
     text: "Authentic Aso-Oke at its finest. The craftsmanship is truly remarkable.",
     rating: 5,
   },
   {
+    // id : 3,
     name: "Olatoye",
+    // image: "/micky dev.jpg",
     text: "Best purchase I've made. The colors are vibrant and the fabric feels premium!",
     rating: 5,
   },
@@ -64,12 +70,12 @@ export default function Home() {
 
         <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
           <h1 className="text-6xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight">
-            Tradition Woven in Style
+            Tradition Woven in Stylen 
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Discover authentic handcrafted Aso-Oke fabrics that celebrate
             culture, craftsmanship, and timeless elegance. Experience the art of
-            weaving with Aso-Oke.
+            weaving with Aso-Oke. 
           </p>
           <div className="flex gap-4 justify-center">
             <Link href="/shop">
@@ -174,7 +180,10 @@ export default function Home() {
                 highest standards of craftsmanship, vibrant colors, and
                 durability. We take pride in offering a wide range of Aso-Oke
                 products, including clothing, accessories, home decor, and more,
-                ensuring that you find the perfect piece for any occasion.
+                ensuring that you find the perfect piece for any occasion. With
+                each purchase, you're not just buying a piece of clothing;
+                you're buying a piece of history, a piece of tradition, and a
+                piece of cultural heritage.
               </p>
               <Link href="/about">
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
