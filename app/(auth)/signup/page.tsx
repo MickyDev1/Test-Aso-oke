@@ -4,6 +4,7 @@ import type React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { doc, serverTimestamp, setDoc, getFirestore } from "firebase/firestore";
@@ -71,7 +72,10 @@ export default function SignupPage() {
         { merge: true }
       );
 
-      router.push("/profile");
+      toast.success("Account created successfully!");
+      setTimeout(() => {
+        router.push("/");
+      }, 900);
     } catch (err: any) {
       setError(err?.message || "Something went wrong");
     } finally {

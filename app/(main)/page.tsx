@@ -8,28 +8,28 @@ const featuredProducts = [
     id: 1,
     name: "Royal Purple Aso-Oke",
     price: "₦45,000",
-    image: "/purple2.jpg",
+    image: "/purple2.JPG",
     rating: 4,
   },
   {
     id: 2,
     name: " Royal Blue Aso-Oke",
     price: "₦38,000",
-    image: "/royalblue.jpg",
+    image: "/royalblue.JPG",
     rating: 5,
   },
   {
     id: 3,
     name: "Black and White Aso-Oke",
     price: "₦42,000",
-    image: "/blackandwhite.jpg",
+    image: "/blackandwhite.JPG",
     rating: 5,
   },
   {
     id: 4,
     name: "Colored Aso-Oke",
     price: "₦40,000",
-    image: "/prodcut2.jpg",
+    image: "/prodcut2.JPG",
     rating: 5,
   },
 ];
@@ -185,11 +185,13 @@ export default function Home() {
                 you're buying a piece of history, a piece of tradition, and a
                 piece of cultural heritage.
               </p>
-              <Link href="/about">
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  Discover Our Story
-                </Button>
-              </Link>
+              <div className="flex justify-center">
+                <Link href="/about">
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    Discover Our Story
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -206,7 +208,10 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-8">
+              <Card
+                key={index}
+                className="p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star

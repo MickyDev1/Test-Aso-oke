@@ -2,6 +2,8 @@
 
 import type React from "react";
 import { createContext, useContext, useState, useEffect } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/lib/firebase.client";
 import type { Product } from "./products";
 
 export interface CartItem extends Product {
@@ -32,25 +34,55 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export function CartProvider({ children }: { children: React.ReactNode }) {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [orders, setOrders] = useState<Order[]>([]);
+  const [userId, setUserId] = useState<string | null>(null);
 
-  // Load from localStorage on mount
+  const getCartKey = (uid: string | null) => `cart:${uid ?? "guest"}`;
+  const getOrdersKey = (uid: string | null) => `orders:${uid ?? "guest"}`;
+
   useEffect(() => {
-    const savedCart = localStorage.getItem("cart");
-    const savedOrders = localStorage.getItem("orders");
+    const unsub = onAuthStateChanged(auth, (user) => {
+      const uid = user?.uid ?? null;
+      setUserId(uid);
 
-    if (savedCart) setCartItems(JSON.parse(savedCart));
-    if (savedOrders) setOrders(JSON.parse(savedOrders));
+      const cartKey = getCartKey(uid);
+      const ordersKey = getOrdersKey(uid);
+
+      setCartItems([]);
+      setOrders([]);
+
+      const savedCart = localStorage.getItem(cartKey);
+      const savedOrders = localStorage.getItem(ordersKey);
+
+      if (savedCart) {
+        try {
+          setCartItems(JSON.parse(savedCart));
+        } catch {
+          setCartItems([]);
+        }
+      }
+      if (savedOrders) {
+        try {
+          setOrders(JSON.parse(savedOrders));
+        } catch {
+          setOrders([]);
+        }
+      }
+    });
+
+    return () => unsub();
   }, []);
 
   // Save to localStorage whenever cart changes
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartItems));
-  }, [cartItems]);
+    const cartKey = getCartKey(userId);
+    localStorage.setItem(cartKey, JSON.stringify(cartItems));
+  }, [cartItems, userId]);
 
   // Save orders to localStorage
   useEffect(() => {
-    localStorage.setItem("orders", JSON.stringify(orders));
-  }, [orders]);
+    const ordersKey = getOrdersKey(userId);
+    localStorage.setItem(ordersKey, JSON.stringify(orders));
+  }, [orders, userId]);
 
   const addToCart = (product: Product, quantity: number) => {
     setCartItems((prevItems) => {

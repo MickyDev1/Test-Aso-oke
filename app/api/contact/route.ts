@@ -46,8 +46,8 @@ export async function POST(req: Request) {
       );
     }
 
-    const from = "Aso-Oke Store <onboarding@resend.dev>";
-
+    // const from = "Aso-Oke Store <onboarding@resend.dev>";
+    const from = "Aso-Oke Store <oladelemichael587@gmail.com>";
     const html = `
       <div style="font-family: Arial, sans-serif; line-height: 1.6;">
         <h2>New Contact Form Message</h2>

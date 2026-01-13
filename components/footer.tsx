@@ -77,8 +77,11 @@ export default function Footer() {
                 placeholder="Your email"
                 className="text-sm"
               />
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Sign Up
+              <Button
+                asChild
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+              >
+                <Link href="/signup">Sign Up</Link>
               </Button>
             </div>
           </div>
