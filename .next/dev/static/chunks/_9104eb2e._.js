@@ -129,50 +129,170 @@ __turbopack_context__.s([
 const PRODUCTS = [
     {
         id: 1,
-        name: "Royal Blue Aso-Oke",
+        name: "Royal Purple Aso-Oke",
         price: 45000,
-        description: "Premium handcrafted royal blue Aso-Oke fabric with intricate patterns",
-        image: "/royal-blue-aso-oke-fabric-handcrafted.jpg",
+        description: "Regal purple Aso-Oke with rich, handwoven texture.",
+        image: "/purple2.JPG",
         rating: 5
     },
     {
         id: 2,
-        name: "White Classic Aso-Oke",
-        price: 38000,
-        description: "Elegant white Aso-Oke with traditional embroidery and craftsmanship",
-        image: "/white-aso-oke-fabric-classic.jpg",
+        name: "Royal Blue Aso-Oke",
+        price: 42000,
+        description: "Deep royal blue Aso-Oke crafted for standout occasions.",
+        image: "/royalblue.JPG",
         rating: 5
     },
     {
         id: 3,
-        name: "Navy Heritage Aso-Oke",
-        price: 42000,
-        description: "Rich navy blue handwoven Aso-Oke with luxury finishing",
-        image: "/navy-blue-aso-oke-fabric-heritage.jpg",
+        name: "Black & White Aso-Oke",
+        price: 43000,
+        description: "Classic black and white weave with a bold, timeless finish.",
+        image: "/blackandwhite.JPG",
         rating: 5
     },
     {
         id: 4,
         name: "Sky Blue Aso-Oke",
         price: 40000,
-        description: "Fresh sky blue Aso-Oke perfect for celebrations and special occasions",
+        description: "Light sky blue Aso-Oke ideal for elegant celebrations.",
         image: "/sky-blue-aso-oke-fabric-light.jpg",
         rating: 5
     },
     {
         id: 5,
-        name: "White & Blue Combo Aso-Oke",
-        price: 50000,
-        description: "Stunning white base with blue patterns - limited edition piece",
-        image: "/white-blue-combination-aso-oke-fabric.jpg",
+        name: "Signature Aso-Oke",
+        price: 38000,
+        description: "A refined signature weave with a vibrant, modern touch.",
+        image: "/product1.JPG",
         rating: 5
     },
     {
         id: 6,
-        name: "Cobalt Deep Aso-Oke",
-        price: 48000,
-        description: "Deep cobalt blue Aso-Oke with premium hand-finishing details",
-        image: "/cobalt-deep-blue-aso-oke-fabric.jpg",
+        name: "Heritage Aso-Oke",
+        price: 39000,
+        description: "A heritage-inspired pattern woven for everyday luxury.",
+        image: "/prodcut2.JPG",
+        rating: 5
+    },
+    {
+        id: 7,
+        name: "Aso-Oke Fabric No. 7",
+        price: 41000,
+        description: "Handcrafted Aso-Oke fabric with rich color depth.",
+        image: "/11480f63fe4f4e55a11a51d6da9d3580.JPG",
+        rating: 5
+    },
+    {
+        id: 8,
+        name: "Aso-Oke Fabric No. 8",
+        price: 39500,
+        description: "Detailed loom work with a vibrant, celebratory finish.",
+        image: "/FB_IMG_1765202837585.JPG",
+        rating: 5
+    },
+    {
+        id: 9,
+        name: "Aso-Oke Fabric No. 9",
+        price: 40500,
+        description: "Premium weave built for special events and ceremonies.",
+        image: "/FB_IMG_1767118857808.JPG",
+        rating: 5
+    },
+    {
+        id: 10,
+        name: "Aso-Oke Fabric No. 10",
+        price: 42000,
+        description: "Traditional Aso-Oke texture with a refined finish.",
+        image: "/FB_IMG_1767176840623.JPG",
+        rating: 5
+    },
+    {
+        id: 11,
+        name: "Aso-Oke Fabric No. 11",
+        price: 41500,
+        description: "Luxurious handwoven fabric with intricate detailing.",
+        image: "/FB_IMG_1767943549905.JPG",
+        rating: 5
+    },
+    {
+        id: 12,
+        name: "Aso-Oke Fabric No. 12",
+        price: 43000,
+        description: "Bold patterning with a premium, ceremonial look.",
+        image: "/FB_IMG_1767943658837.JPG",
+        rating: 5
+    },
+    {
+        id: 13,
+        name: "Aso-Oke Fabric No. 13",
+        price: 44000,
+        description: "Vibrant Aso-Oke weave with classic Yoruba styling.",
+        image: "/FB_IMG_1767943671776.JPG",
+        rating: 5
+    },
+    {
+        id: 14,
+        name: "Aso-Oke Fabric No. 14",
+        price: 43500,
+        description: "Handcrafted fabric with a bold, celebratory finish.",
+        image: "/FB_IMG_1767943677128.JPG",
+        rating: 5
+    },
+    {
+        id: 15,
+        name: "Aso-Oke Fabric No. 15",
+        price: 40000,
+        description: "Elegant loom work designed for standout moments.",
+        image: "/FB_IMG_1768155402955.JPG",
+        rating: 5
+    },
+    {
+        id: 16,
+        name: "Aso-Oke Fabric No. 16",
+        price: 41000,
+        description: "Premium texture with a vibrant ceremonial palette.",
+        image: "/FB_IMG_1768155423624.JPG",
+        rating: 5
+    },
+    {
+        id: 17,
+        name: "Aso-Oke Fabric No. 17",
+        price: 42000,
+        description: "Handwoven for elegance with a rich, authentic look.",
+        image: "/FB_IMG_1768155428512.JPG",
+        rating: 5
+    },
+    {
+        id: 18,
+        name: "Aso-Oke Fabric No. 18",
+        price: 42500,
+        description: "A signature weave with intricate details and depth.",
+        image: "/FB_IMG_1768155433508.JPG",
+        rating: 5
+    },
+    {
+        id: 19,
+        name: "Aso-Oke Fabric No. 19",
+        price: 39500,
+        description: "A modern take on traditional Aso-Oke craftsmanship.",
+        image: "/IMG-20251222-WA0012.JPEG",
+        rating: 5
+    },
+    {
+        id: 20,
+        name: "Aso-Oke Fabric No. 20",
+        price: 40500,
+        description: "Balanced colorwork with a premium handwoven finish.",
+        image: "/IMG_20251224_112218049.JPG",
+        rating: 5
+    },
+    {
+        id: 21,
+        name: "Aso-Oke Fabric No. 21",
+        price: 41500,
+        description: "Celebration-ready Aso-Oke with detailed texture.",
+        image: "/IMG_20251224_112220670.JPG",
         rating: 5
     }
 ];

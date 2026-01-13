@@ -210,7 +210,7 @@ function LoginPage() {
         try {
             setLoading(true);
             await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f40$firebase$2b$auth$40$1$2e$12$2e$0_$40$firebase$2b$app$40$0$2e$14$2e$6$2f$node_modules$2f40$firebase$2f$auth$2f$dist$2f$esm$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["signInWithEmailAndPassword"])(auth, email, password);
-            router.push("/profile");
+            router.push("/");
         } catch (err) {
             setError("Invalid email or password");
         } finally{

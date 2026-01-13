@@ -1,6 +1,13 @@
 {
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/profile/page": "app/(auth)/profile/page.js",
+  "/(auth)/signup/page": "app/(auth)/signup/page.js",
+  "/(main)/about/page": "app/(main)/about/page.js",
+  "/(main)/cart/page": "app/(main)/cart/page.js",
   "/(main)/contact/page": "app/(main)/contact/page.js",
   "/(main)/page": "app/(main)/page.js",
-  "/api/contact/route": "app/api/contact/route.js",
-  "/api/debug-env/route": "app/api/debug-env/route.js"
+  "/(main)/shop/[id]/page": "app/(main)/shop/[id]/page.js",
+  "/(main)/shop/page": "app/(main)/shop/page.js",
+  "/(main)/testimonials/page": "app/(main)/testimonials/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

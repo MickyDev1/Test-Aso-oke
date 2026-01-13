@@ -1,53 +1,23 @@
 "use client";
 
-import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { toast } from "sonner";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  MessageCircle,
+  Sparkles,
+} from "lucide-react";
 
 export default function ContactPage() {
-  const [loading, setLoading] = useState(false);
-
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        toast.error(data?.error || "Message failed to send");
-        return;
-      }
-
-      toast.success("🎉 Delivered!", {
-  description: "Your message has been sent to our team. We’ll respond soon 😊",
-});
-
-
-      setForm({ name: "", email: "", subject: "", message: "" });
-    } catch (err: any) {
-      toast.error(err?.message || "Something went wrong");
-    } finally {
-      setLoading(false);
-    }
-  };
+  const whatsappNumber = "2348033519937";
+  const whatsappMessage =
+    "Hi Aso-Oke House, I would like to inquire about Aso-Oke fabrics, pricing, and availability.";
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
 
   return (
     <div className="min-h-screen py-12 px-4">
@@ -55,12 +25,12 @@ export default function ContactPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6">
-            Get In Touch
+            Let&apos;s Chat on WhatsApp
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have questions about our Aso-Oke fabrics? We’re here to help. Whether
-            you need assistance with your order, want to learn more about our
-            products, or just want to say hello, feel free to reach out.
+            Fast replies, friendly help, and real-time updates. Message our team
+            on WhatsApp and we&apos;ll guide you through fabrics, pricing, and
+            custom orders.
           </p>
         </div>
 
@@ -106,56 +76,60 @@ export default function ContactPage() {
             </div>
           </Card>
 
-          {/* Contact Form */}
+          {/* WhatsApp CTA */}
           <div className="lg:col-span-2">
-            <Card className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input
-                    placeholder="Your Name"
-                    required
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  />
-                  <Input
-                    type="email"
-                    placeholder="Your Email"
-                    required
-                    value={form.email}
-                    onChange={(e) =>
-                      setForm({ ...form, email: e.target.value })
-                    }
-                  />
+            <Card className="p-8 h-full">
+              <div className="flex items-center gap-3 text-primary mb-4">
+                <MessageCircle className="h-6 w-6" />
+                <span className="text-sm font-semibold uppercase tracking-wider">
+                  WhatsApp Concierge
+                </span>
+              </div>
+              <h2 className="text-3xl font-serif font-bold mb-4">
+                Get instant help from our team
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Skip the forms. Tap the button to open a prefilled WhatsApp
+                message and we&apos;ll take it from there. Perfect for
+                inquiries, order help, or custom requests.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="rounded-lg border p-4">
+                  <div className="flex items-center gap-2 mb-2 text-primary">
+                    <Sparkles className="h-4 w-4" />
+                    <span className="font-semibold">What we can help with</span>
+                  </div>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>Fabric availability & pricing</li>
+                    <li>Custom orders & styling</li>
+                    <li>Delivery timelines</li>
+                  </ul>
                 </div>
+                <div className="rounded-lg border p-4">
+                  <div className="flex items-center gap-2 mb-2 text-primary">
+                    <Clock className="h-4 w-4" />
+                    <span className="font-semibold">Response time</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    We usually reply within a few minutes during business hours.
+                  </p>
+                </div>
+              </div>
 
-                <Input
-                  placeholder="Subject"
-                  required
-                  value={form.subject}
-                  onChange={(e) =>
-                    setForm({ ...form, subject: e.target.value })
-                  }
-                />
-
-                <Textarea
-                  placeholder="Message"
-                  rows={6}
-                  required
-                  value={form.message}
-                  onChange={(e) =>
-                    setForm({ ...form, message: e.target.value })
-                  }
-                />
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  disabled={loading}
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+              <Button asChild size="lg" className="w-full">
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Chat with Aso-Oke House on WhatsApp"
                 >
-                  {loading ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
+                  Chat on WhatsApp
+                </a>
+              </Button>
+              <p className="text-xs text-muted-foreground mt-3">
+                You&apos;ll be taken to WhatsApp with a prefilled message.
+              </p>
             </Card>
           </div>
         </div>

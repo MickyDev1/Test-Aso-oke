@@ -99,7 +99,10 @@ export default function TestimonialsPage() {
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="p-8">
+            <Card
+              key={testimonial.id}
+              className="p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-primary text-primary" />

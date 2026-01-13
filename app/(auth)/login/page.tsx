@@ -41,7 +41,7 @@ export default function LoginPage() {
     try {
       setLoading(true);
       await signInWithEmailAndPassword(auth, email, password);
-      router.push("/profile");
+      router.push("/");
     } catch (err: any) {
       setError("Invalid email or password");
     } finally {

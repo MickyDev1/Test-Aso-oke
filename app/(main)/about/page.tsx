@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -190,10 +191,11 @@ export default function AboutPage() {
             in celebrating the art of Aso-Oke.
           </p>
           <Button
+            asChild
             size="lg"
             className="bg-primary text-primary-foreground hover:bg-primary/90"
           >
-            Shop Our Collection Now 
+            <Link href="/shop">Shop Our Collection Now</Link>
           </Button>
         </div>
       </div>

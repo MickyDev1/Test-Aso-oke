@@ -21,19 +21,32 @@ function buildWhatsAppMessage(params: {
   shippingFee: number;
   vat: number;
   total: number;
+  origin: string;
 }) {
-  const { orderId, items, subtotal, shippingFee, vat, total } = params;
+  const { orderId, items, subtotal, shippingFee, vat, total, origin } = params;
 
   const lines = items.map(
     (i) =>
       `• ${i.name} x${i.quantity} — ₦${(i.price * i.quantity).toLocaleString()}`
   );
 
+  const imageLines = items
+    .map((i) => {
+      const image = (i as any).image || "";
+      if (!image) return "";
+      const url = image.startsWith("http") ? image : `${origin}${image}`;
+      return `• ${i.name}: ${url}`;
+    })
+    .filter(Boolean);
+
   const message =
     `Hello Aso-Oke Store 👋\n\n` +
     `I’d like to place an order.\n\n` +
     `Order ID: ${orderId}\n\n` +
     `Items:\n${lines.join("\n")}\n\n` +
+    (imageLines.length
+      ? `Images:\n${imageLines.join("\n")}\n\n`
+      : "") +
     `Subtotal: ₦${subtotal.toLocaleString()}\n` +
     `Shipping: ₦${shippingFee.toLocaleString()}\n` +
     `VAT (7.5%): ₦${vat.toLocaleString()}\n` +
@@ -92,11 +105,13 @@ export default function CartPage() {
           name: i.name,
           price: i.price,
           quantity: i.quantity,
+          image: i.image || "",
         })),
         subtotal,
         shippingFee,
         vat,
         total,
+        origin: window.location.origin,
       });
 
       const waUrl = `Message 199X on WhatsApp. https://wa.me/2347033973539?text=${text}`;
