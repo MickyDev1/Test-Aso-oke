@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "2347033973539";
+export const WHATSAPP_NUMBER = "2348033519937";
 
 export type WhatsAppItem = {
   name: string;
@@ -6,6 +6,23 @@ export type WhatsAppItem = {
   quantity: number;
   image?: string;
 };
+
+export function buildProductWhatsAppLink(params: {
+  productName: string;
+  productId?: number;
+  customizable?: boolean;
+}) {
+  const { productName, productId, customizable } = params;
+  const customizationLine = customizable
+    ? "Customization is important to me."
+    : "";
+  const productIdLine = productId ? ` (ID: ${productId})` : "";
+  const message =
+    `Hi Aso-Oke House, I'm interested in ${productName}${productIdLine}. ` +
+    `${customizationLine} Please share availability, pricing, and delivery details.`;
+
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
 
 function formatMoney(n: number) {
   return `NGN ${(n || 0).toLocaleString()}`;

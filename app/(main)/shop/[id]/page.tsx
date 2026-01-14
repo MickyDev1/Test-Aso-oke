@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { Star, ShoppingCart, ArrowLeft } from "lucide-react";
 import { PRODUCTS } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
+import { buildProductWhatsAppLink } from "@/lib/whatsapp";
 
 export default function ProductDetailPage() {
   const params = useParams<{ id: string }>();
@@ -17,6 +18,7 @@ export default function ProductDetailPage() {
   );
   const product = PRODUCTS.find((p) => p.id === productId);
   const [quantity, setQuantity] = useState(1);
+  const [activeImage, setActiveImage] = useState("");
   const { addToCart } = useCart();
 
   if (!product) {
@@ -47,6 +49,14 @@ export default function ProductDetailPage() {
     );
   }
 
+  const images = product.images?.length
+    ? product.images
+    : [product.image].filter(Boolean);
+
+  useEffect(() => {
+    setActiveImage(images[0] || "");
+  }, [images]);
+
   const handleAddToCart = () => {
     addToCart(product, quantity);
     alert(`Added ${quantity} ${quantity === 1 ? "item" : "items"} to cart!`);
@@ -74,11 +84,34 @@ export default function ProductDetailPage() {
           <div>
             <div className="rounded-lg overflow-hidden bg-muted h-96 mb-6">
               <img
-                src={product.image || "/placeholder.svg"}
+                src={activeImage || product.image || "/placeholder.svg"}
                 alt={product.name}
                 className="w-full h-full object-cover"
               />
             </div>
+            {images.length > 1 && (
+              <div className="flex flex-wrap gap-3">
+                {images.map((image, index) => (
+                  <button
+                    key={`${image}-${index}`}
+                    type="button"
+                    onClick={() => setActiveImage(image)}
+                    className={`h-20 w-20 rounded-md border overflow-hidden transition ${
+                      activeImage === image
+                        ? "border-primary ring-2 ring-primary/30"
+                        : "border-border"
+                    }`}
+                    aria-label={`View ${product.name} image ${index + 1}`}
+                  >
+                    <img
+                      src={image}
+                      alt={`${product.name} detail ${index + 1}`}
+                      className="h-full w-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Product Details */}
@@ -86,6 +119,13 @@ export default function ProductDetailPage() {
             <h1 className="text-5xl font-serif font-bold mb-4">
               {product.name}
             </h1>
+            {product.customizable && (
+              <div className="mb-4">
+                <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                  Customization available
+                </span>
+              </div>
+            )}
 
             <div className="flex items-center gap-4 mb-6">
               <div className="flex gap-1">
@@ -102,9 +142,17 @@ export default function ProductDetailPage() {
               ₦{product.price.toLocaleString()}
             </p>
 
-            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+            <p className="text-lg font-semibold text-primary mb-3">
+              {product.hook}
+            </p>
+            <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
               {product.description}
             </p>
+            <ul className="text-sm text-muted-foreground space-y-2 mb-8">
+              {product.benefits.map((benefit) => (
+                <li key={benefit}>• {benefit}</li>
+              ))}
+            </ul>
 
             {/* Specifications */}
             <div className="mb-8 bg-card p-6 rounded-lg border border-border">
@@ -162,9 +210,28 @@ export default function ProductDetailPage() {
               </div>
 
               <Button
-                onClick={handleAddToCart}
                 size="lg"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
+                asChild
+              >
+                <a
+                  href={buildProductWhatsAppLink({
+                    productName: product.name,
+                    productId: product.id,
+                    customizable: product.customizable,
+                  })}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {product.cta}
+                </a>
+              </Button>
+
+              <Button
+                onClick={handleAddToCart}
+                size="lg"
+                variant="outline"
+                className="w-full bg-transparent gap-2"
               >
                 <ShoppingCart className="h-5 w-5" />
                 Add to Cart
@@ -197,7 +264,7 @@ export default function ProductDetailPage() {
                 >
                   <div className="relative h-64 bg-muted">
                     <img
-                      src={p.image || "/placeholder.svg"}
+                      src={p.images?.[0] || p.image || "/placeholder.svg"}
                       alt={p.name}
                       className="w-full h-full object-cover"
                     />
@@ -220,6 +287,28 @@ export default function ProductDetailPage() {
                   </div>
                 </Card>
               ))}
+            </div>
+
+            <div className="mt-12 rounded-lg border border-border bg-card p-8 text-center">
+              <h3 className="text-2xl font-serif font-bold mb-4">
+                Need help choosing a fabric?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Chat with us on WhatsApp for styling advice, customization, and
+                delivery timelines.
+              </p>
+              <Button asChild size="lg">
+                <a
+                  href={buildProductWhatsAppLink({
+                    productName: "Aso-Oke fabrics",
+                    customizable: true,
+                  })}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Chat on WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
         )}

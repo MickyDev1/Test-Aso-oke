@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { buildProductWhatsAppLink } from "@/lib/whatsapp";
 
 const featuredProducts = [
   {
@@ -13,7 +14,7 @@ const featuredProducts = [
   },
   {
     id: 2,
-    name: " Royal Blue Aso-Oke",
+    name: "Royal Blue Aso-Oke",
     price: "₦38,000",
     image: "/royalblue.JPG",
     rating: 5,
@@ -70,14 +71,14 @@ export default function Home() {
 
         <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
           <h1 className="text-6xl md:text-7xl font-serif font-bold text-foreground mb-6 leading-tight">
-            Tradition Woven in Stylen 
+            Tradition Woven in Style
           </h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
             Discover authentic handcrafted Aso-Oke fabrics that celebrate
             culture, craftsmanship, and timeless elegance. Experience the art of
-            weaving with Aso-Oke. 
+            weaving with Aso-Oke.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/shop">
               <Button
                 size="lg"
@@ -197,12 +198,71 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Choose Us */}
+      <section className="py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+              Why Choose Aso-Oke House
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Authentic, premium, and made to celebrate your biggest moments.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Authentic Handwoven Craft",
+                description:
+                  "Every piece is woven on traditional looms for true Yoruba heritage.",
+              },
+              {
+                title: "Premium Quality You Can Feel",
+                description:
+                  "Dense texture, rich color depth, and durability made for repeat wear.",
+              },
+              {
+                title: "Customization for Your Occasion",
+                description:
+                  "From weddings to owambe, we tailor fabrics to your preferred look.",
+              },
+            ].map((item) => (
+              <Card
+                key={item.title}
+                className="p-8 text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <h3 className="font-serif text-2xl font-semibold mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground">{item.description}</p>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button asChild size="lg">
+              <a
+                href={buildProductWhatsAppLink({
+                  productName: "Aso-Oke fabrics",
+                  customizable: true,
+                })}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
-              What Our Customers Says
+              What Our Customers Say
             </h2>
           </div>
 
@@ -234,6 +294,41 @@ export default function Home() {
                 View All Testimonials
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Options */}
+      <section className="py-20 px-4 bg-card">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+            Ready to Order or Ask a Question?
+          </h2>
+          <p className="text-muted-foreground text-lg mb-8">
+            Reach us on WhatsApp or follow our socials for new drops and updates.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button asChild size="lg" className="w-full sm:w-auto">
+              <a
+                href={buildProductWhatsAppLink({
+                  productName: "Aso-Oke fabrics",
+                  customizable: true,
+                })}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
+              <a
+                href="https://www.instagram.com/_aso.oke?igsh=MTViMHQ3eHZrNnQwbA%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
+            </Button>
           </div>
         </div>
       </section>
