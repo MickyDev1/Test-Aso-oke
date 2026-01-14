@@ -58,7 +58,7 @@ export default function AboutPage() {
 
         {/* Mission, Vision, Values */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          <Card className="p-8">
+          <Card className="p-8 transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30">
             <h3 className="text-2xl font-serif font-bold text-primary mb-4">
               Our Mission
             </h3>
@@ -70,7 +70,7 @@ export default function AboutPage() {
             </p>
           </Card>
 
-          <Card className="p-8">
+          <Card className="p-8 transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30">
             <h3 className="text-2xl font-serif font-bold text-primary mb-4">
               Our Vision
             </h3>
@@ -82,7 +82,7 @@ export default function AboutPage() {
             </p>
           </Card>
 
-          <Card className="p-8">
+          <Card className="p-8 transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30">
             <h3 className="text-2xl font-serif font-bold text-primary mb-4">
               Our Values
             </h3>
@@ -162,7 +162,10 @@ export default function AboutPage() {
                   "We honor traditional patterns while embracing modern design sensibilities.",
               },
             ].map((craft, index) => (
-              <Card key={index} className="p-6">
+              <Card
+                key={index}
+                className="p-6 transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30"
+              >
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <span className="text-primary font-serif font-bold text-lg">
                     {index + 1}

@@ -125,7 +125,9 @@ const PRODUCTS = [
         image: "/purple2.JPG",
         images: [
             "/purple2.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/product1.JPG",
+            "/FB_IMG_1767943671776.JPG",
+            "/FB_IMG_1767943658837.JPG"
         ],
         rating: 5
     },
@@ -145,7 +147,9 @@ const PRODUCTS = [
         image: "/royalblue.JPG",
         images: [
             "/royalblue.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/11480f63fe4f4e55a11a51d6da9d3580.JPG",
+            "/FB_IMG_1765202837585.JPG",
+            "/FB_IMG_1767118857808.JPG"
         ],
         rating: 5
     },
@@ -165,7 +169,7 @@ const PRODUCTS = [
         image: "/blackandwhite.JPG",
         images: [
             "/blackandwhite.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1767943549905.JPG"
         ],
         rating: 5
     },
@@ -184,8 +188,7 @@ const PRODUCTS = [
         customizable: true,
         image: "/sky-blue-aso-oke-fabric-light.jpg",
         images: [
-            "/sky-blue-aso-oke-fabric-light.jpg",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/sky-blue-aso-oke-fabric-light.jpg"
         ],
         rating: 5
     },
@@ -205,7 +208,8 @@ const PRODUCTS = [
         image: "/product1.JPG",
         images: [
             "/product1.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/purple2.JPG",
+            "/FB_IMG_1767943658837.JPG"
         ],
         rating: 5
     },
@@ -224,8 +228,7 @@ const PRODUCTS = [
         customizable: true,
         image: "/prodcut2.JPG",
         images: [
-            "/prodcut2.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/prodcut2.JPG"
         ],
         rating: 5
     },
@@ -245,7 +248,8 @@ const PRODUCTS = [
         image: "/11480f63fe4f4e55a11a51d6da9d3580.JPG",
         images: [
             "/11480f63fe4f4e55a11a51d6da9d3580.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1765202837585.JPG",
+            "/FB_IMG_1767176840623.JPG"
         ],
         rating: 5
     },
@@ -265,7 +269,8 @@ const PRODUCTS = [
         image: "/FB_IMG_1765202837585.JPG",
         images: [
             "/FB_IMG_1765202837585.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1767176840623.JPG",
+            "/FB_IMG_1767118857808.JPG"
         ],
         rating: 5
     },
@@ -285,7 +290,8 @@ const PRODUCTS = [
         image: "/FB_IMG_1767118857808.JPG",
         images: [
             "/FB_IMG_1767118857808.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/royalblue.JPG",
+            "/FB_IMG_1767176840623.JPG"
         ],
         rating: 5
     },
@@ -305,7 +311,7 @@ const PRODUCTS = [
         image: "/FB_IMG_1767176840623.JPG",
         images: [
             "/FB_IMG_1767176840623.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1768155402955.JPG"
         ],
         rating: 5
     },
@@ -322,10 +328,10 @@ const PRODUCTS = [
         ],
         cta: "Order now via WhatsApp",
         customizable: true,
-        image: "/FB_IMG_1767943549905.JPG",
+        image: "/FB_IMG_1768155428512.JPG",
         images: [
-            "/FB_IMG_1767943549905.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1768155428512.JPG",
+            "/IMG-20251222-WA0012.JPEG"
         ],
         rating: 5
     },
@@ -345,7 +351,8 @@ const PRODUCTS = [
         image: "/FB_IMG_1767943658837.JPG",
         images: [
             "/FB_IMG_1767943658837.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1767943671776.JPG",
+            "/purple2.JPG"
         ],
         rating: 5
     },
@@ -365,7 +372,8 @@ const PRODUCTS = [
         image: "/FB_IMG_1767943671776.JPG",
         images: [
             "/FB_IMG_1767943671776.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/purple2.JPG",
+            "/product1.JPG"
         ],
         rating: 5
     },
@@ -385,7 +393,8 @@ const PRODUCTS = [
         image: "/FB_IMG_1767943677128.JPG",
         images: [
             "/FB_IMG_1767943677128.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/IMG_20251224_112218049.JPG",
+            "/IMG_20251224_112220670.JPG"
         ],
         rating: 5
     },
@@ -405,7 +414,7 @@ const PRODUCTS = [
         image: "/FB_IMG_1768155402955.JPG",
         images: [
             "/FB_IMG_1768155402955.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1767176840623.JPG"
         ],
         rating: 5
     },
@@ -424,8 +433,7 @@ const PRODUCTS = [
         customizable: true,
         image: "/FB_IMG_1768155423624.JPG",
         images: [
-            "/FB_IMG_1768155423624.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1768155423624.JPG"
         ],
         rating: 5
     },
@@ -445,7 +453,7 @@ const PRODUCTS = [
         image: "/FB_IMG_1768155428512.JPG",
         images: [
             "/FB_IMG_1768155428512.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/IMG-20251222-WA0012.JPEG"
         ],
         rating: 5
     },
@@ -464,8 +472,7 @@ const PRODUCTS = [
         customizable: true,
         image: "/FB_IMG_1768155433508.JPG",
         images: [
-            "/FB_IMG_1768155433508.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1768155433508.JPG"
         ],
         rating: 5
     },
@@ -485,7 +492,7 @@ const PRODUCTS = [
         image: "/IMG-20251222-WA0012.JPEG",
         images: [
             "/IMG-20251222-WA0012.JPEG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1768155428512.JPG"
         ],
         rating: 5
     },
@@ -505,7 +512,8 @@ const PRODUCTS = [
         image: "/IMG_20251224_112218049.JPG",
         images: [
             "/IMG_20251224_112218049.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/FB_IMG_1767943677128.JPG",
+            "/IMG_20251224_112220670.JPG"
         ],
         rating: 5
     },
@@ -525,11 +533,53 @@ const PRODUCTS = [
         image: "/IMG_20251224_112220670.JPG",
         images: [
             "/IMG_20251224_112220670.JPG",
-            "/aso-oke-weaving-process-traditional-craft-hands.jpg"
+            "/IMG_20251224_112218049.JPG",
+            "/FB_IMG_1767943677128.JPG"
         ],
         rating: 5
     }
 ];
+}),
+"[project]/lib/whatsapp.ts [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "WHATSAPP_NUMBER",
+    ()=>WHATSAPP_NUMBER,
+    "buildProductWhatsAppLink",
+    ()=>buildProductWhatsAppLink,
+    "buildWhatsAppMessage",
+    ()=>buildWhatsAppMessage
+]);
+const WHATSAPP_NUMBER = "2348033519937";
+function buildProductWhatsAppLink(params) {
+    const { productName, productId, customizable } = params;
+    const customizationLine = customizable ? "Customization is important to me." : "";
+    const productIdLine = productId ? ` (ID: ${productId})` : "";
+    const message = `Hi Aso-Oke House, I'm interested in ${productName}${productIdLine}. ` + `${customizationLine} Please share availability, pricing, and delivery details.`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+function formatMoney(n) {
+    return `NGN ${(n || 0).toLocaleString()}`;
+}
+function buildWhatsAppMessage(params) {
+    const { orderId, items, subtotal, shippingFee, vat, total, origin, customerName, phone, address, note } = params;
+    const lines = items.map((i)=>`- ${i.name} x${i.quantity} - ${formatMoney(i.price * i.quantity)}`);
+    const imageLines = items.map((i)=>{
+        const image = i.image || "";
+        if (!image) return "";
+        const url = image.startsWith("http") ? image : `${origin}${image}`;
+        return `- ${i.name}: ${url}`;
+    }).filter(Boolean);
+    const details = [
+        customerName ? `Name: ${customerName}` : "",
+        phone ? `Phone: ${phone}` : "",
+        address ? `Address: ${address}` : "",
+        note ? `Note: ${note}` : ""
+    ].filter(Boolean);
+    const message = `Hello Aso-Oke Store\n\n` + `I'd like to place an order.\n\n` + `Order ID: ${orderId}\n\n` + (details.length ? `${details.join("\n")}\n\n` : "") + `Items:\n${lines.join("\n")}\n\n` + (imageLines.length ? `Images:\n${imageLines.join("\n")}\n\n` : "") + `Subtotal: ${formatMoney(subtotal)}\n` + `Shipping: ${formatMoney(shippingFee)}\n` + `VAT (7.5%): ${formatMoney(vat)}\n` + `Total: ${formatMoney(total)}\n\n` + `Please confirm availability. Once confirmed, kindly send a Paystack/Flutterwave payment link.\n`;
+    return encodeURIComponent(message);
+}
 }),
 "[project]/app/(main)/shop/page.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
@@ -547,8 +597,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lu
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$0$2e$454$2e$0_react$40$19$2e$2$2e$0$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$filter$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Filter$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/lucide-react@0.454.0_react@19.2.0/node_modules/lucide-react/dist/esm/icons/filter.js [app-ssr] (ecmascript) <export default as Filter>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$products$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/products.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$cart$2d$context$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/cart-context.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$whatsapp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/whatsapp.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$sonner$40$1$2e$7$2e$4_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/sonner@1.7.4_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/sonner/dist/index.mjs [app-ssr] (ecmascript)");
 "use client";
+;
 ;
 ;
 ;
@@ -607,7 +659,7 @@ function ShopPage() {
                             children: "Our Collection"
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/shop/page.tsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -615,13 +667,13 @@ function ShopPage() {
                             children: "Explore our selection of handcrafted Aso-Oke fabrics"
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/shop/page.tsx",
-                            lineNumber: 46,
+                            lineNumber: 47,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(main)/shop/page.tsx",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -638,19 +690,19 @@ function ShopPage() {
                                                 className: "h-5 w-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/(main)/shop/page.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 57,
                                                 columnNumber: 17
                                             }, this),
                                             "Filters"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/(main)/shop/page.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -660,7 +712,7 @@ function ShopPage() {
                                             children: "Sort By"
                                         }, void 0, false, {
                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -673,7 +725,7 @@ function ShopPage() {
                                                     children: "Newest"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                    lineNumber: 68,
+                                                    lineNumber: 69,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -681,7 +733,7 @@ function ShopPage() {
                                                     children: "Price: Low to High"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                    lineNumber: 69,
+                                                    lineNumber: 70,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -689,25 +741,25 @@ function ShopPage() {
                                                     children: "Price: High to Low"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 71,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 62,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(main)/shop/page.tsx",
-                            lineNumber: 53,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -722,7 +774,7 @@ function ShopPage() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                    lineNumber: 77,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -736,22 +788,22 @@ function ShopPage() {
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "relative h-64 bg-muted overflow-hidden group",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: product.image || "/placeholder.svg",
+                                                            src: product.images?.[0] || product.image || "/placeholder.svg",
                                                             alt: product.name,
                                                             className: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                                            lineNumber: 89,
+                                                            lineNumber: 90,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/(main)/shop/page.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 89,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 88,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -762,16 +814,56 @@ function ShopPage() {
                                                             children: product.name
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                                            lineNumber: 98,
+                                                            lineNumber: 99,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-sm text-muted-foreground mb-4 flex-1",
+                                                            className: "text-sm font-semibold text-primary mb-2",
+                                                            children: product.hook
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                                            lineNumber: 102,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-sm text-muted-foreground mb-4",
                                                             children: product.description
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                                            lineNumber: 101,
+                                                            lineNumber: 105,
                                                             columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "text-xs text-muted-foreground space-y-1 mb-4",
+                                                            children: product.benefits.slice(0, 2).map((benefit)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    children: [
+                                                                        "• ",
+                                                                        benefit
+                                                                    ]
+                                                                }, benefit, true, {
+                                                                    fileName: "[project]/app/(main)/shop/page.tsx",
+                                                                    lineNumber: 111,
+                                                                    columnNumber: 25
+                                                                }, this))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                                            lineNumber: 109,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        product.customizable && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "mb-4",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary",
+                                                                children: "Customization available"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/app/(main)/shop/page.tsx",
+                                                                lineNumber: 117,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                                            lineNumber: 116,
+                                                            columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "flex gap-1 mb-4",
@@ -781,108 +873,179 @@ function ShopPage() {
                                                                     className: "h-4 w-4 fill-primary text-primary"
                                                                 }, i, false, {
                                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                                    lineNumber: 107,
+                                                                    lineNumber: 125,
                                                                     columnNumber: 25
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                                            lineNumber: 105,
+                                                            lineNumber: 123,
                                                             columnNumber: 21
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex justify-between items-center gap-2",
+                                                            className: "mt-auto",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-xl font-bold text-primary",
+                                                                    className: "text-xl font-bold text-primary block mb-4",
                                                                     children: [
                                                                         "₦",
                                                                         product.price.toLocaleString()
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                                    lineNumber: 115,
+                                                                    lineNumber: 133,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex gap-2",
+                                                                    className: "flex flex-col sm:flex-row gap-2",
                                                                     children: [
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                                            size: "sm",
-                                                                            onClick: (e)=>handleAddToCart(e, product),
-                                                                            className: "bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer",
-                                                                            children: "Add"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/(main)/shop/page.tsx",
-                                                                            lineNumber: 120,
-                                                                            columnNumber: 25
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                                            href: `/shop/${product.id}`,
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                                                                                size: "sm",
-                                                                                variant: "outline",
-                                                                                className: "cursor-pointer bg-transparent",
-                                                                                children: "View"
+                                                                            asChild: true,
+                                                                            size: "default",
+                                                                            className: "flex-1",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$whatsapp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildProductWhatsAppLink"])({
+                                                                                    productName: product.name,
+                                                                                    productId: product.id,
+                                                                                    customizable: product.customizable
+                                                                                }),
+                                                                                target: "_blank",
+                                                                                rel: "noreferrer",
+                                                                                children: "Order on WhatsApp"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/(main)/shop/page.tsx",
-                                                                                lineNumber: 129,
+                                                                                lineNumber: 139,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                                                            lineNumber: 128,
+                                                                            lineNumber: 138,
+                                                                            columnNumber: 25
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                                            size: "default",
+                                                                            variant: "outline",
+                                                                            onClick: (e)=>handleAddToCart(e, product),
+                                                                            className: "flex-1 cursor-pointer bg-transparent",
+                                                                            children: "Add to Cart"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                                                            lineNumber: 152,
+                                                                            columnNumber: 25
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                                            href: `/shop/${product.id}`,
+                                                                            className: "flex-1",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                                                                size: "default",
+                                                                                variant: "outline",
+                                                                                className: "w-full cursor-pointer bg-transparent",
+                                                                                children: "View"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/(main)/shop/page.tsx",
+                                                                                lineNumber: 162,
+                                                                                columnNumber: 27
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                                                            lineNumber: 161,
                                                                             columnNumber: 25
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                                    lineNumber: 119,
+                                                                    lineNumber: 137,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                                            lineNumber: 114,
+                                                            lineNumber: 132,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                                    lineNumber: 97,
+                                                    lineNumber: 98,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, product.id, true, {
                                             fileName: "[project]/app/(main)/shop/page.tsx",
-                                            lineNumber: 83,
+                                            lineNumber: 84,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/app/(main)/shop/page.tsx",
-                                    lineNumber: 81,
+                                    lineNumber: 82,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mt-16 rounded-lg border border-border bg-card p-8 text-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "text-3xl font-serif font-bold mb-4",
+                                            children: "Ready to place your order?"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                            lineNumber: 178,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-muted-foreground mb-6",
+                                            children: "Chat with us on WhatsApp for instant replies, customization, and delivery details."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                            lineNumber: 181,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                            asChild: true,
+                                            size: "lg",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$whatsapp$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["buildProductWhatsAppLink"])({
+                                                    productName: "Aso-Oke Collection",
+                                                    customizable: true
+                                                }),
+                                                target: "_blank",
+                                                rel: "noreferrer",
+                                                children: "Chat on WhatsApp"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/(main)/shop/page.tsx",
+                                                lineNumber: 186,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/(main)/shop/page.tsx",
+                                            lineNumber: 185,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/(main)/shop/page.tsx",
+                                    lineNumber: 177,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(main)/shop/page.tsx",
-                            lineNumber: 76,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(main)/shop/page.tsx",
-                    lineNumber: 51,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/(main)/shop/page.tsx",
-            lineNumber: 43,
+            lineNumber: 44,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/(main)/shop/page.tsx",
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 5
     }, this);
 }
@@ -959,4 +1122,4 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lu
 }),
 ];
 
-//# sourceMappingURL=_3c78c28a._.js.map
+//# sourceMappingURL=_ee627902._.js.map

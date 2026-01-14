@@ -10,12 +10,12 @@ import {
   MessageCircle,
   Sparkles,
 } from "lucide-react";
+import { WHATSAPP_NUMBER } from "@/lib/whatsapp";
 
 export default function ContactPage() {
-  const whatsappNumber = "2348033519937";
   const whatsappMessage =
     "Hi Aso-Oke House, I would like to inquire about Aso-Oke fabrics, pricing, and availability.";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+  const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
     whatsappMessage
   )}`;
 
@@ -165,11 +165,10 @@ export default function ContactPage() {
                 Instagram
               </a>
             </Button>
-            <Button variant="outline" size="lg">
-              Whatsapp
-            </Button>
-            <Button variant="outline" size="lg">
-              TikTok
+            <Button asChild variant="outline" size="lg">
+              <a href={whatsappLink} target="_blank" rel="noreferrer">
+                WhatsApp
+              </a>
             </Button>
           </div>
         </div>

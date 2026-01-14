@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Star, Filter } from "lucide-react";
 import { PRODUCTS } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
+import { buildProductWhatsAppLink } from "@/lib/whatsapp";
 import { toast } from "sonner";
 
 const colors = ["All", "Blue", "White", "Navy", "Sky", "Combo"];
@@ -87,7 +88,7 @@ export default function ShopPage() {
                   <Link href={`/shop/${product.id}`} className="block">
                     <div className="relative h-64 bg-muted overflow-hidden group">
                       <img
-                        src={product.image || "/placeholder.svg"}
+                        src={product.images?.[0] || product.image || "/placeholder.svg"}
                         alt={product.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
@@ -98,9 +99,26 @@ export default function ShopPage() {
                     <h3 className="font-serif font-semibold text-lg mb-2">
                       {product.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground mb-4 flex-1">
+                    <p className="text-sm font-semibold text-primary mb-2">
+                      {product.hook}
+                    </p>
+                    <p className="text-sm text-muted-foreground mb-4">
                       {product.description}
                     </p>
+
+                    <ul className="text-xs text-muted-foreground space-y-1 mb-4">
+                      {product.benefits.slice(0, 2).map((benefit) => (
+                        <li key={benefit}>• {benefit}</li>
+                      ))}
+                    </ul>
+
+                    {product.customizable && (
+                      <div className="mb-4">
+                        <span className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                          Customization available
+                        </span>
+                      </div>
+                    )}
 
                     <div className="flex gap-1 mb-4">
                       {[...Array(product.rating)].map((_, i) => (
@@ -111,25 +129,40 @@ export default function ShopPage() {
                       ))}
                     </div>
 
-                    <div className="flex justify-between items-center gap-2">
-                      <span className="text-xl font-bold text-primary">
+                    <div className="mt-auto">
+                      <span className="text-xl font-bold text-primary block mb-4">
                         ₦{product.price.toLocaleString()}
                       </span>
 
-                      <div className="flex gap-2">
-                        <Button
-                          size="sm"
-                          onClick={(e) => handleAddToCart(e, product)}
-                          className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
-                        >
-                          Add
+                      <div className="flex flex-col sm:flex-row gap-2">
+                        <Button asChild size="default" className="flex-1">
+                          <a
+                            href={buildProductWhatsAppLink({
+                              productName: product.name,
+                              productId: product.id,
+                              customizable: product.customizable,
+                            })}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Order on WhatsApp
+                          </a>
                         </Button>
 
-                        <Link href={`/shop/${product.id}`}>
+                        <Button
+                          size="default"
+                          variant="outline"
+                          onClick={(e) => handleAddToCart(e, product)}
+                          className="flex-1 cursor-pointer bg-transparent"
+                        >
+                          Add to Cart
+                        </Button>
+
+                        <Link href={`/shop/${product.id}`} className="flex-1">
                           <Button
-                            size="sm"
+                            size="default"
                             variant="outline"
-                            className="cursor-pointer bg-transparent"
+                            className="w-full cursor-pointer bg-transparent"
                           >
                             View
                           </Button>
@@ -139,6 +172,28 @@ export default function ShopPage() {
                   </div>
                 </Card>
               ))}
+            </div>
+
+            <div className="mt-16 rounded-lg border border-border bg-card p-8 text-center">
+              <h2 className="text-3xl font-serif font-bold mb-4">
+                Ready to place your order?
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Chat with us on WhatsApp for instant replies, customization, and
+                delivery details.
+              </p>
+              <Button asChild size="lg">
+                <a
+                  href={buildProductWhatsAppLink({
+                    productName: "Aso-Oke Collection",
+                    customizable: true,
+                  })}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Chat on WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
         </div>

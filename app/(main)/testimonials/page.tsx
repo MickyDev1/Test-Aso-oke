@@ -8,8 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Star } from "lucide-react";
-import Image from "next/image";
-import image from "../../public/micky dev.jpg";
+import { buildProductWhatsAppLink } from "@/lib/whatsapp";
 
 const testimonials = [
   {
@@ -103,33 +102,48 @@ export default function TestimonialsPage() {
               key={testimonial.id}
               className="p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed min-h-24">
-                "{testimonial.text}"
-              </p>
-              <div className="flex items-center gap-4">
-                <img
-                  src={testimonial.image || "/placeholder.svg"}
-                  alt={testimonial.name}
-                  className="h-12 w-12 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-xs text-muted-foreground">
-                    {testimonial.date}
-                  </p>
+              <div>
+                <p className="font-semibold">{testimonial.name}</p>
+                <p className="text-muted-foreground mt-3 leading-relaxed min-h-24">
+                  "{testimonial.text}"
+                </p>
+                <div className="flex gap-1 mt-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                  ))}
                 </div>
+                <p className="text-xs text-muted-foreground mt-3">
+                  {testimonial.date}
+                </p>
               </div>
             </Card>
           ))}
         </div>
 
+        {/* CTA Strip */}
+        <div className="mb-16 rounded-lg border border-border bg-card px-6 py-8 text-center transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 md:px-10">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">
+            Ready for premium Aso-Oke?
+          </h2>
+          <p className="text-muted-foreground mb-6">
+            Chat us on WhatsApp for availability and custom orders.
+          </p>
+          <Button asChild size="lg">
+            <a
+              href={buildProductWhatsAppLink({
+                productName: "Aso-Oke fabrics",
+                customizable: true,
+              })}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Chat on WhatsApp
+            </a>
+          </Button>
+        </div>
+
         {/* Submission Section */}
-        <div className="bg-card rounded-lg p-12 text-center">
+        <div className="bg-card rounded-lg p-12 text-center transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 border border-transparent">
           <h2 className="text-3xl font-serif font-bold mb-4">
             Share Your Experience
           </h2>

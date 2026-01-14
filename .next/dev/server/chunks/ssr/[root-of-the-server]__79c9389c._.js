@@ -197,10 +197,19 @@ function CardFooter({ className, ...props }) {
 __turbopack_context__.s([
     "WHATSAPP_NUMBER",
     ()=>WHATSAPP_NUMBER,
+    "buildProductWhatsAppLink",
+    ()=>buildProductWhatsAppLink,
     "buildWhatsAppMessage",
     ()=>buildWhatsAppMessage
 ]);
 const WHATSAPP_NUMBER = "2347033973539";
+function buildProductWhatsAppLink(params) {
+    const { productName, productId, customizable } = params;
+    const customizationLine = customizable ? "Customization is important to me." : "";
+    const productIdLine = productId ? ` (ID: ${productId})` : "";
+    const message = `Hi Aso-Oke House, I'm interested in ${productName}${productIdLine}. ` + `${customizationLine} Please share availability, pricing, and delivery details.`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
 function formatMoney(n) {
     return `NGN ${(n || 0).toLocaleString()}`;
 }
