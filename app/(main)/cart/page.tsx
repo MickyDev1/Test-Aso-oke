@@ -1,129 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useCart } from "@/lib/cart-context";
 import { Trash2, ShoppingBag, ArrowLeft } from "lucide-react";
 
-import { addDoc, collection, serverTimestamp, getFirestore } from "firebase/firestore";
-import { auth, app } from "@/lib/firebase.client";
-
-const db = getFirestore(app);
-
-const WHATSAPP_NUMBER = "2347033973539"; // <-- change to your business WhatsApp number (no +)
-
-function buildWhatsAppMessage(params: {
-  orderId: string;
-  items: Array<{ name: string; price: number; quantity: number }>;
-  subtotal: number;
-  shippingFee: number;
-  vat: number;
-  total: number;
-  origin: string;
-}) {
-  const { orderId, items, subtotal, shippingFee, vat, total, origin } = params;
-
-  const lines = items.map(
-    (i) =>
-      `• ${i.name} x${i.quantity} — ₦${(i.price * i.quantity).toLocaleString()}`
-  );
-
-  const imageLines = items
-    .map((i) => {
-      const image = (i as any).image || "";
-      if (!image) return "";
-      const url = image.startsWith("http") ? image : `${origin}${image}`;
-      return `• ${i.name}: ${url}`;
-    })
-    .filter(Boolean);
-
-  const message =
-    `Hello Aso-Oke Store 👋\n\n` +
-    `I’d like to place an order.\n\n` +
-    `Order ID: ${orderId}\n\n` +
-    `Items:\n${lines.join("\n")}\n\n` +
-    (imageLines.length
-      ? `Images:\n${imageLines.join("\n")}\n\n`
-      : "") +
-    `Subtotal: ₦${subtotal.toLocaleString()}\n` +
-    `Shipping: ₦${shippingFee.toLocaleString()}\n` +
-    `VAT (7.5%): ₦${vat.toLocaleString()}\n` +
-    `Total: ₦${total.toLocaleString()}\n\n` +
-    `Please confirm availability. Once confirmed, kindly send a Paystack/Flutterwave payment link.\n`;
-
-  return encodeURIComponent(message);
-}
-
 export default function CartPage() {
-  const router = useRouter();
   const { cartItems, removeFromCart, updateQuantity, cartTotal } = useCart();
-
-  const handleCheckout = async () => {
-    if (cartItems.length === 0) return;
-
-    const user = auth.currentUser;
-    if (!user) {
-      router.push("/login");
-      return;
-    }
-
-    // Totals (same logic you already show)
-    const subtotal = cartTotal;
-    const shippingFee = 2000;
-    const vat = Math.round(subtotal * 0.075);
-    const total = subtotal + shippingFee + vat;
-
-    try {
-      // 1) Create order in Firestore
-      const ref = await addDoc(collection(db, "orders"), {
-        userId: user.uid,
-        customerName: user.displayName || "",
-        customerEmail: user.email || "",
-        items: cartItems.map((i) => ({
-          id: i.id,
-          name: i.name,
-          price: i.price,
-          quantity: i.quantity,
-          image: i.image || "",
-        })),
-        subtotal,
-        shippingFee,
-        vat,
-        total,
-        status: "pending", // pending -> confirmed -> paid -> shipped -> completed
-        channel: "whatsapp",
-        createdAt: serverTimestamp(),
-        updatedAt: serverTimestamp(),
-      });
-
-      // 2) Open WhatsApp with message containing the order ID
-      const text = buildWhatsAppMessage({
-        orderId: ref.id,
-        items: cartItems.map((i) => ({
-          name: i.name,
-          price: i.price,
-          quantity: i.quantity,
-          image: i.image || "",
-        })),
-        subtotal,
-        shippingFee,
-        vat,
-        total,
-        origin: window.location.origin,
-      });
-
-      const waUrl = `Message 199X on WhatsApp. https://wa.me/2347033973539?text=${text}`;
-      window.location.href = waUrl;
-
-      // Optional: you can also redirect user to /profile after WhatsApp opens
-      // router.push("/profile");
-    } catch (err: any) {
-      console.error(err);
-      alert(err?.message || "Failed to create order. Please try again.");
-    }
-  };
 
   return (
     <div className="min-h-screen bg-background py-20 px-4">
@@ -147,7 +31,7 @@ export default function CartPage() {
             </p>
             <Link href="/shop">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Continue Shopping 
+                Continue Shopping
               </Button>
             </Link>
           </Card>
@@ -226,7 +110,7 @@ export default function CartPage() {
             <div>
               <Card className="p-6 sticky top-24">
                 <h2 className="text-2xl font-serif font-bold mb-6">
-                  Order Summary 
+                  Order Summary
                 </h2>
 
                 <div className="space-y-4 mb-6">
@@ -260,13 +144,14 @@ export default function CartPage() {
                   </div>
                 </div>
 
-                <Button
-                  onClick={handleCheckout}
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mb-3"
-                  size="lg"
-                >
-                  Proceed to WhatsApp Checkout 
-                </Button>
+                <Link href="/checkout" className="block">
+                  <Button
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mb-3"
+                    size="lg"
+                  >
+                    Proceed to Checkout
+                  </Button>
+                </Link>
 
                 <Link href="/shop" className="block">
                   <Button

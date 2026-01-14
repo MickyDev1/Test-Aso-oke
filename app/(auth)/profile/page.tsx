@@ -35,6 +35,59 @@ type OrderStatus =
   | "completed"
   | "cancelled";
 
+const ORDER_STEPS = [
+  "pending",
+  "confirmed",
+  "paid",
+  "shipped",
+  "completed",
+] as const;
+
+type OrderStep = (typeof ORDER_STEPS)[number];
+
+function getStatusIndex(status: string) {
+  const normalized = (status || "pending").toLowerCase();
+  const idx = ORDER_STEPS.indexOf(normalized as OrderStep);
+  return idx === -1 ? 0 : idx;
+}
+
+function OrderStatusTimeline({ status }: { status: string }) {
+  const normalized = (status || "pending").toLowerCase();
+  if (normalized === "cancelled") {
+    return (
+      <p className="text-sm text-destructive font-medium">
+        Order cancelled
+      </p>
+    );
+  }
+
+  const currentIndex = getStatusIndex(normalized);
+
+  return (
+    <div className="flex flex-wrap items-center gap-3">
+      {ORDER_STEPS.map((step, index) => {
+        const isActive = index <= currentIndex;
+        return (
+          <div key={step} className="flex items-center gap-2">
+            <span
+              className={`h-2.5 w-2.5 rounded-full ${
+                isActive ? "bg-primary" : "bg-muted"
+              }`}
+            />
+            <span
+              className={`text-xs uppercase tracking-wide ${
+                isActive ? "text-foreground" : "text-muted-foreground"
+              }`}
+            >
+              {step}
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 function formatMoney(n: number) {
   return `₦${(n || 0).toLocaleString()}`;
 }
@@ -357,6 +410,15 @@ export default function ProfilePage() {
                           {order.status || "pending"}
                         </span>
                       </div>
+                    </div>
+
+                    <div className="mt-4">
+                      <p className="text-xs uppercase text-muted-foreground mb-2">
+                        Tracking
+                      </p>
+                      <OrderStatusTimeline
+                        status={order.status || "pending"}
+                      />
                     </div>
 
                     <div className="space-y-3">

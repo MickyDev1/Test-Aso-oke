@@ -156,8 +156,14 @@ export default function ContactPage() {
             behind-the-scenes content, and special offers.
           </p>
           <div className="flex justify-center gap-4">
-            <Button variant="outline" size="lg">
-              Instagram
+            <Button asChild variant="outline" size="lg">
+              <a
+                href="https://www.instagram.com/_aso.oke?igsh=MTViMHQ3eHZrNnQwbA%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Instagram
+              </a>
             </Button>
             <Button variant="outline" size="lg">
               Whatsapp
