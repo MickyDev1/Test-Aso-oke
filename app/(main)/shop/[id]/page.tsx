@@ -1,22 +1,51 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Star, ShoppingCart, ArrowLeft } from "lucide-react";
 import { PRODUCTS } from "@/lib/products";
 import { useCart } from "@/lib/cart-context";
 
-export default function ProductDetailPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const productId = Number.parseInt(params.id);
-  const product = PRODUCTS.find((p) => p.id === productId) || PRODUCTS[0];
+export default function ProductDetailPage() {
+  const params = useParams<{ id: string }>();
+  const productId = useMemo(
+    () => Number.parseInt(params?.id ?? ""),
+    [params?.id]
+  );
+  const product = PRODUCTS.find((p) => p.id === productId);
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
+
+  if (!product) {
+    return (
+      <div className="min-h-screen py-12 px-4">
+        <div className="max-w-3xl mx-auto">
+          <Link
+            href="/shop"
+            className="text-primary hover:underline mb-8 inline-flex items-center gap-2"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back to Shop
+          </Link>
+
+          <Card className="p-10 text-center">
+            <h1 className="text-2xl font-serif font-bold mb-3">
+              Product not found
+            </h1>
+            <p className="text-muted-foreground mb-6">
+              We could not find the product you selected.
+            </p>
+            <Link href="/shop">
+              <Button>Return to Shop</Button>
+            </Link>
+          </Card>
+        </div>
+      </div>
+    );
+  }
 
   const handleAddToCart = () => {
     addToCart(product, quantity);
