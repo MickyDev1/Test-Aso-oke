@@ -1,3 +1,4 @@
 [00:00:01.033] Server  LOG      ✓ Ready in 776ms
 [00:00:07.997] Server  LOG      ○ Compiling / ...
 [00:02:22.317] Browser ERROR   [2026-01-14T17:37:04.027Z]  @firebase/firestore: Firestore (12.6.0): Uncaught Error in snapshot listener: FirebaseError: [code=permission-denied]: Missing or insufficient permissions.
+[05:56:41.920] Server  LOG      ✓ Compiled in 276ms
