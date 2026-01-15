@@ -28,7 +28,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/shop"
-                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  className="sweet-link text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   Shop
                 </Link>
@@ -36,7 +36,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  className="sweet-link text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   About Us
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  className="sweet-link text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   Contact
                 </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
               {/* <li>
                 <Link
                   href="/login"
-                  className="text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  className="sweet-link text-muted-foreground hover:text-primary transition-colors cursor-pointer"
                 >
                   Sign In
                 </Link>

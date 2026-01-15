@@ -112,13 +112,13 @@ export default function Home() {
             {featuredProducts.map((product) => (
               <Card
                 key={product.id}
-                className="overflow-hidden hover:shadow-lg transition-shadow"
+                className="sweet-card sweet-group overflow-hidden"
               >
-                <div className="relative h-64 bg-muted overflow-hidden group">
+                <div className="relative h-64 bg-muted overflow-hidden">
                   <img
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="sweet-zoom w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
@@ -230,7 +230,7 @@ export default function Home() {
             ].map((item) => (
               <Card
                 key={item.title}
-                className="p-8 text-center transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="sweet-card p-8 text-center"
               >
                 <h3 className="font-serif text-2xl font-semibold mb-4">
                   {item.title}
@@ -270,7 +270,7 @@ export default function Home() {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="sweet-card p-8"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (

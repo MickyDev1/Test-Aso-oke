@@ -65,7 +65,7 @@ export default function CartPage() {
                     <div className="flex flex-col items-end justify-between">
                       <button
                         onClick={() => removeFromCart(item.id)}
-                        className="text-destructive hover:bg-destructive/10 p-2 rounded-lg transition-colors"
+                        className="sweet-tap text-destructive hover:bg-destructive/10 p-2 rounded-lg transition-colors"
                       >
                         <Trash2 className="h-5 w-5" />
                       </button>
@@ -75,7 +75,7 @@ export default function CartPage() {
                           onClick={() =>
                             updateQuantity(item.id, item.quantity - 1)
                           }
-                          className="text-foreground hover:text-primary font-bold"
+                          className="sweet-tap text-foreground hover:text-primary font-bold"
                         >
                           −
                         </button>
@@ -86,7 +86,7 @@ export default function CartPage() {
                           onClick={() =>
                             updateQuantity(item.id, item.quantity + 1)
                           }
-                          className="text-foreground hover:text-primary font-bold"
+                          className="sweet-tap text-foreground hover:text-primary font-bold"
                         >
                           +
                         </button>
