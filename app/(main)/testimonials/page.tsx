@@ -100,7 +100,7 @@ export default function TestimonialsPage() {
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.id}
-              className="p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="sweet-card p-8"
             >
               <div>
                 <p className="font-semibold">{testimonial.name}</p>
@@ -121,7 +121,7 @@ export default function TestimonialsPage() {
         </div>
 
         {/* CTA Strip */}
-        <div className="mb-16 rounded-lg border border-border bg-card px-6 py-8 text-center transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 md:px-10">
+        <div className="sweet-card mb-16 rounded-lg border border-border bg-card px-6 py-8 text-center md:px-10">
           <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">
             Ready for premium Aso-Oke?
           </h2>
@@ -143,7 +143,7 @@ export default function TestimonialsPage() {
         </div>
 
         {/* Submission Section */}
-        <div className="bg-card rounded-lg p-12 text-center transition hover:-translate-y-1 hover:shadow-xl hover:border-primary/30 border border-transparent">
+        <div className="sweet-card bg-card rounded-lg p-12 text-center border border-transparent">
           <h2 className="text-3xl font-serif font-bold mb-4">
             Share Your Experience
           </h2>
@@ -193,7 +193,7 @@ export default function TestimonialsPage() {
                       key={star}
                       type="button"
                       onClick={() => setFormData({ ...formData, rating: star })}
-                      className="transition-colors"
+                      className="sweet-tap transition-colors"
                     >
                       <Star
                         className={`h-8 w-8 ${

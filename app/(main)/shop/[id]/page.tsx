@@ -27,7 +27,7 @@ export default function ProductDetailPage() {
         <div className="max-w-3xl mx-auto">
           <Link
             href="/shop"
-            className="text-primary hover:underline mb-8 inline-flex items-center gap-2"
+            className="sweet-link text-primary hover:underline mb-8 inline-flex items-center gap-2"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Shop
@@ -73,7 +73,7 @@ export default function ProductDetailPage() {
       <div className="max-w-7xl mx-auto">
         <Link
           href="/shop"
-          className="text-primary hover:underline mb-8 inline-flex items-center gap-2"
+          className="sweet-link text-primary hover:underline mb-8 inline-flex items-center gap-2"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to Shop
@@ -96,7 +96,7 @@ export default function ProductDetailPage() {
                     key={`${image}-${index}`}
                     type="button"
                     onClick={() => setActiveImage(image)}
-                    className={`h-20 w-20 rounded-md border overflow-hidden transition ${
+                    className={`sweet-tap h-20 w-20 rounded-md border overflow-hidden transition ${
                       activeImage === image
                         ? "border-primary ring-2 ring-primary/30"
                         : "border-border"
@@ -186,7 +186,7 @@ export default function ProductDetailPage() {
                 <div className="flex items-center border border-border rounded-md">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="px-4 py-2 hover:bg-muted transition-colors font-bold"
+                    className="sweet-tap px-4 py-2 hover:bg-muted transition-colors font-bold"
                   >
                     −
                   </button>
@@ -202,7 +202,7 @@ export default function ProductDetailPage() {
                   />
                   <button
                     onClick={() => setQuantity(quantity + 1)}
-                    className="px-4 py-2 hover:bg-muted transition-colors font-bold"
+                    className="sweet-tap px-4 py-2 hover:bg-muted transition-colors font-bold"
                   >
                     +
                   </button>
@@ -260,13 +260,13 @@ export default function ProductDetailPage() {
               {relatedProducts.map((p) => (
                 <Card
                   key={p.id}
-                  className="overflow-hidden hover:shadow-lg transition-shadow"
+                  className="sweet-card sweet-group overflow-hidden"
                 >
                   <div className="relative h-64 bg-muted">
                     <img
                       src={p.images?.[0] || p.image || "/placeholder.svg"}
                       alt={p.name}
-                      className="w-full h-full object-cover"
+                      className="sweet-zoom w-full h-full object-cover"
                     />
                   </div>
                   <div className="p-6">

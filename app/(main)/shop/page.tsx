@@ -83,14 +83,14 @@ export default function ShopPage() {
               {sorted.map((product) => (
                 <Card
                   key={product.id}
-                  className="overflow-hidden hover:shadow-lg transition-shadow flex flex-col cursor-pointer"
+                  className="sweet-card sweet-group overflow-hidden flex flex-col cursor-pointer"
                 >
                   <Link href={`/shop/${product.id}`} className="block">
-                    <div className="relative h-64 bg-muted overflow-hidden group">
+                    <div className="relative h-64 bg-muted overflow-hidden">
                       <img
                         src={product.images?.[0] || product.image || "/placeholder.svg"}
                         alt={product.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="sweet-zoom w-full h-full object-cover"
                       />
                     </div>
                   </Link>
