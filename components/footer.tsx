@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="border-t border-border bg-card mt-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
@@ -90,7 +92,7 @@ export default function Footer() {
         {/* Social & Copyright */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2025 Aso-Oke. All rights reserved.
+            © {year} Aso-Oke. All rights reserved.
           </p>
           <div className="flex gap-4">
             <Button variant="ghost" size="icon">
