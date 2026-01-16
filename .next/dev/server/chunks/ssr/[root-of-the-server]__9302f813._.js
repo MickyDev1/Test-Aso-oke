@@ -687,7 +687,7 @@ function Home() {
                                             children: item.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/(main)/page.tsx",
-                                            lineNumber: 235,
+                                            lineNumber: 232,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -695,7 +695,7 @@ function Home() {
                                             children: item.description
                                         }, void 0, false, {
                                             fileName: "[project]/app/(main)/page.tsx",
-                                            lineNumber: 238,
+                                            lineNumber: 235,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -724,17 +724,17 @@ function Home() {
                                     children: "Chat on WhatsApp"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(main)/page.tsx",
-                                    lineNumber: 245,
+                                    lineNumber: 242,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/(main)/page.tsx",
-                                lineNumber: 244,
+                                lineNumber: 241,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/page.tsx",
-                            lineNumber: 243,
+                            lineNumber: 240,
                             columnNumber: 11
                         }, this)
                     ]
@@ -760,12 +760,12 @@ function Home() {
                                 children: "What Our Customers Say"
                             }, void 0, false, {
                                 fileName: "[project]/app/(main)/page.tsx",
-                                lineNumber: 264,
+                                lineNumber: 261,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/page.tsx",
-                            lineNumber: 263,
+                            lineNumber: 260,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -781,12 +781,12 @@ function Home() {
                                                     className: "h-4 w-4 fill-primary text-primary"
                                                 }, i, false, {
                                                     fileName: "[project]/app/(main)/page.tsx",
-                                                    lineNumber: 277,
+                                                    lineNumber: 271,
                                                     columnNumber: 21
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "[project]/app/(main)/page.tsx",
-                                            lineNumber: 275,
+                                            lineNumber: 269,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -798,7 +798,7 @@ function Home() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/(main)/page.tsx",
-                                            lineNumber: 283,
+                                            lineNumber: 277,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -806,18 +806,18 @@ function Home() {
                                             children: testimonial.name
                                         }, void 0, false, {
                                             fileName: "[project]/app/(main)/page.tsx",
-                                            lineNumber: 286,
+                                            lineNumber: 280,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/app/(main)/page.tsx",
-                                    lineNumber: 271,
+                                    lineNumber: 268,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/page.tsx",
-                            lineNumber: 269,
+                            lineNumber: 266,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -830,28 +830,28 @@ function Home() {
                                     children: "View All Testimonials"
                                 }, void 0, false, {
                                     fileName: "[project]/app/(main)/page.tsx",
-                                    lineNumber: 293,
+                                    lineNumber: 287,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/(main)/page.tsx",
-                                lineNumber: 292,
+                                lineNumber: 286,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/page.tsx",
-                            lineNumber: 291,
+                            lineNumber: 285,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(main)/page.tsx",
-                    lineNumber: 262,
+                    lineNumber: 259,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/(main)/page.tsx",
-                lineNumber: 261,
+                lineNumber: 258,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -864,7 +864,7 @@ function Home() {
                             children: "Ready to Order or Ask a Question?"
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/page.tsx",
-                            lineNumber: 304,
+                            lineNumber: 298,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -872,7 +872,7 @@ function Home() {
                             children: "Reach us on WhatsApp or follow our socials for new drops and updates."
                         }, void 0, false, {
                             fileName: "[project]/app/(main)/page.tsx",
-                            lineNumber: 307,
+                            lineNumber: 301,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -892,12 +892,12 @@ function Home() {
                                         children: "Chat on WhatsApp"
                                     }, void 0, false, {
                                         fileName: "[project]/app/(main)/page.tsx",
-                                        lineNumber: 312,
+                                        lineNumber: 307,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(main)/page.tsx",
-                                    lineNumber: 311,
+                                    lineNumber: 306,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
@@ -917,24 +917,24 @@ function Home() {
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/(main)/page.tsx",
-                                    lineNumber: 323,
+                                    lineNumber: 318,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/(main)/page.tsx",
-                            lineNumber: 310,
+                            lineNumber: 305,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/(main)/page.tsx",
-                    lineNumber: 303,
+                    lineNumber: 297,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/(main)/page.tsx",
-                lineNumber: 302,
+                lineNumber: 296,
                 columnNumber: 7
             }, this)
         ]

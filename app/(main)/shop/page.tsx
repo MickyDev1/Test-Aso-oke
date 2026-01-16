@@ -88,7 +88,11 @@ export default function ShopPage() {
                   <Link href={`/shop/${product.id}`} className="block">
                     <div className="relative h-64 bg-muted overflow-hidden">
                       <img
-                        src={product.images?.[0] || product.image || "/placeholder.svg"}
+                        src={
+                          product.images?.[0] ||
+                          product.image ||
+                          "/placeholder.svg"
+                        }
                         alt={product.name}
                         className="sweet-zoom w-full h-full object-cover"
                       />

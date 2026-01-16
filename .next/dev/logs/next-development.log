@@ -37,3 +37,7 @@ It can also happen if the client has a browser extension installed which messes 
                           >
                   ...
 
+[12:16:14.325] Server  LOG      ✓ Compiled in 420ms
+[12:16:39.534] Server  LOG      ✓ Compiled in 82ms
+[12:18:47.775] Server  LOG      ✓ Compiled in 143ms
+[12:22:50.902] Server  LOG      ✓ Compiled in 189ms

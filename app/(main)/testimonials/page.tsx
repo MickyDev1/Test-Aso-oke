@@ -91,17 +91,15 @@ export default function TestimonialsPage() {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Hear from our satisfied customers who have experienced the beauty
-            and quality of our authentic Aso-Oke fabrics. We value your feedback and look forward to serving you.
+            and quality of our authentic Aso-Oke fabrics. We value your feedback
+            and look forward to serving you.
           </p>
         </div>
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial) => (
-            <Card
-              key={testimonial.id}
-              className="sweet-card p-8"
-            >
+            <Card key={testimonial.id} className="sweet-card p-8">
               <div>
                 <p className="font-semibold">{testimonial.name}</p>
                 <p className="text-muted-foreground mt-3 leading-relaxed min-h-24">
@@ -109,7 +107,10 @@ export default function TestimonialsPage() {
                 </p>
                 <div className="flex gap-1 mt-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 fill-primary text-primary"
+                    />
                   ))}
                 </div>
                 <p className="text-xs text-muted-foreground mt-3">

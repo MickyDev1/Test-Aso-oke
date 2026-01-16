@@ -228,10 +228,7 @@ export default function Home() {
                   "From weddings to owambe, we tailor fabrics to your preferred look.",
               },
             ].map((item) => (
-              <Card
-                key={item.title}
-                className="sweet-card p-8 text-center"
-              >
+              <Card key={item.title} className="sweet-card p-8 text-center">
                 <h3 className="font-serif text-2xl font-semibold mb-4">
                   {item.title}
                 </h3>
@@ -268,10 +265,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="sweet-card p-8"
-              >
+              <Card key={index} className="sweet-card p-8">
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
@@ -305,7 +299,8 @@ export default function Home() {
             Ready to Order or Ask a Question?
           </h2>
           <p className="text-muted-foreground text-lg mb-8">
-            Reach us on WhatsApp or follow our socials for new drops and updates.
+            Reach us on WhatsApp or follow our socials for new drops and
+            updates.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild size="lg" className="w-full sm:w-auto">
@@ -320,7 +315,12 @@ export default function Home() {
                 Chat on WhatsApp
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto"
+            >
               <a
                 href="https://www.instagram.com/_aso.oke?igsh=MTViMHQ3eHZrNnQwbA%3D%3D&utm_source=qr"
                 target="_blank"

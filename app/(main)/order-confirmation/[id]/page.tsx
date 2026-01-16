@@ -40,7 +40,7 @@ type OrderData = {
   total?: number;
   customerName?: string;
   customerPhone?: string;
-  shippingAddress?: string;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  shippingAddress?: string;
   customerNote?: string;
   createdAt?: { toDate?: () => Date };
 };
@@ -198,7 +198,9 @@ export default function OrderConfirmationPage() {
                   </p>
                 </div>
                 <div className="text-right">
-                  <p className="text-sm text-muted-foreground">Current status</p>
+                  <p className="text-sm text-muted-foreground">
+                    Current status
+                  </p>
                   <p className="text-lg font-semibold capitalize">
                     {order.status || "pending"}
                   </p>

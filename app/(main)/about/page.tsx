@@ -33,7 +33,7 @@ export default function AboutPage() {
               The Art of Aso-Oke
             </h2>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              Aso-Oke, meaning "cloth from the top," is a handwoven textile with 
+              Aso-Oke, meaning "cloth from the top," is a handwoven textile with
               deep roots in Yoruba culture. For generations, this fabric has
               been an essential part of traditional ceremonies, celebrations,
               and formal attire. It is known for its vibrant colors, intricate
@@ -113,10 +113,10 @@ export default function AboutPage() {
                 that not only produces exquisite fabrics but also educates the
                 world about the rich heritage behind each weave. With a deep
                 understanding of the weaving process and a passion for
-                preserving cultural traditions, Micky Oke, the founder of Aso-Oke
-                Fabrics, has set the standard for authentic Aso-Oke fabrics. She
-                believes that Aso-Oke is not just a fabric, but a symbol of
-                tradition, creativity, and cultural heritage.
+                preserving cultural traditions, Micky Oke, the founder of
+                Aso-Oke Fabrics, has set the standard for authentic Aso-Oke
+                fabrics. She believes that Aso-Oke is not just a fabric, but a
+                symbol of tradition, creativity, and cultural heritage.
               </p>
               <blockquote className="text-xl font-serif italic text-primary mb-8">
                 "Every thread tells a story. Every color carries meaning.
@@ -162,10 +162,7 @@ export default function AboutPage() {
                   "We honor traditional patterns while embracing modern design sensibilities.",
               },
             ].map((craft, index) => (
-              <Card
-                key={index}
-                className="sweet-card p-6"
-              >
+              <Card key={index} className="sweet-card p-6">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <span className="text-primary font-serif font-bold text-lg">
                     {index + 1}
