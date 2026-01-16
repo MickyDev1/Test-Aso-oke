@@ -8,7 +8,11 @@ import { Menu, X, ShoppingCart, User, LogOut } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 import { ThemeToggle } from "@/components/theme-toggle";
 
-import { onAuthStateChanged, signOut, type User as FirebaseUser } from "firebase/auth";
+import {
+  onAuthStateChanged,
+  signOut,
+  type User as FirebaseUser,
+} from "firebase/auth";
 import { auth } from "@/lib/firebase.client";
 
 export default function Navigation() {
@@ -47,7 +51,9 @@ export default function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 cursor-pointer">
-            <div className="text-2xl font-bold font-serif text-primary">ASO-OKE</div>
+            <div className="text-2xl font-bold font-serif text-primary">
+              ASO-OKE
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -77,7 +83,10 @@ export default function Navigation() {
                 </Link>
 
                 <Link href="/signup" className="hidden md:block">
-                  <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
+                  <Button
+                    size="sm"
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
+                  >
                     Sign Up
                   </Button>
                 </Link>
@@ -87,7 +96,12 @@ export default function Navigation() {
             {!authLoading && fbUser && (
               <>
                 <Link href="/profile" className="cursor-pointer">
-                  <Button variant="ghost" size="icon" title="My Profile" className="cursor-pointer">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    title="My Profile"
+                    className="cursor-pointer"
+                  >
                     <User className="h-5 w-5" />
                   </Button>
                 </Link>
@@ -105,7 +119,12 @@ export default function Navigation() {
             )}
 
             <Link href="/cart" className="cursor-pointer">
-              <Button variant="ghost" size="icon" className="relative cursor-pointer" title="Shopping Cart">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="relative cursor-pointer"
+                title="Shopping Cart"
+              >
                 <ShoppingCart className="h-5 w-5" />
                 {cartItems.length > 0 && (
                   <span className="absolute top-1 right-1 h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">
@@ -116,8 +135,15 @@ export default function Navigation() {
             </Link>
 
             {/* Mobile Menu Button */}
-            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden cursor-pointer">
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden cursor-pointer"
+            >
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -138,13 +164,21 @@ export default function Navigation() {
 
             {!authLoading && !fbUser && (
               <>
-                <Link href="/login" className="block px-4 py-2" onClick={() => setIsOpen(false)}>
+                <Link
+                  href="/login"
+                  className="block px-4 py-2"
+                  onClick={() => setIsOpen(false)}
+                >
                   <Button variant="outline" className="w-full">
                     Sign In
                   </Button>
                 </Link>
 
-                <Link href="/signup" className="block px-4 py-2" onClick={() => setIsOpen(false)}>
+                <Link
+                  href="/signup"
+                  className="block px-4 py-2"
+                  onClick={() => setIsOpen(false)}
+                >
                   <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
                     Sign Up
                   </Button>
@@ -154,7 +188,11 @@ export default function Navigation() {
 
             {!authLoading && fbUser && (
               <>
-                <Link href="/profile" className="block px-4 py-2" onClick={() => setIsOpen(false)}>
+                <Link
+                  href="/profile"
+                  className="block px-4 py-2"
+                  onClick={() => setIsOpen(false)}
+                >
                   <Button variant="outline" className="w-full">
                     My Profile
                   </Button>

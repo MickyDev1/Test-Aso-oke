@@ -170,7 +170,7 @@ export default function CheckoutPage() {
             </Button>
           </Link>
           <h1 className="text-4xl font-serif font-bold">Checkout</h1>
-        </div>
+        </div> 
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
@@ -186,7 +186,7 @@ export default function CheckoutPage() {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <label className="block text-sm font-medium mb-2">
-                    Full name
+                    Full name 
                   </label>
                   <Input
                     value={formData.name}

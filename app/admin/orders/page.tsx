@@ -22,7 +22,13 @@ const db = getFirestore();
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-type OrderStatus = "pending" | "confirmed" | "paid" | "shipped" | "completed" | "cancelled";
+type OrderStatus =
+  | "pending"
+  | "confirmed"
+  | "paid"
+  | "shipped"
+  | "completed"
+  | "cancelled";
 
 const ADMIN_UID = "VcFK4VLkPbet7MAvYx35ds17C143";
 
@@ -125,7 +131,17 @@ export default function AdminOrdersPage() {
 
         {/* Filter */}
         <div className="flex flex-wrap gap-2 mb-6">
-          {(["all", "pending", "confirmed", "paid", "shipped", "completed", "cancelled"] as const).map((s) => (
+          {(
+            [
+              "all",
+              "pending",
+              "confirmed",
+              "paid",
+              "shipped",
+              "completed",
+              "cancelled",
+            ] as const
+          ).map((s) => (
             <Button
               key={s}
               variant={statusFilter === s ? "default" : "outline"}
@@ -139,7 +155,9 @@ export default function AdminOrdersPage() {
 
         {filteredOrders.length === 0 ? (
           <Card className="p-10 text-center">
-            <p className="text-muted-foreground">No orders found for this filter.</p>
+            <p className="text-muted-foreground">
+              No orders found for this filter.
+            </p>
           </Card>
         ) : (
           <div className="space-y-4">
@@ -151,16 +169,23 @@ export default function AdminOrdersPage() {
                       Order ID: <span className="font-mono">{order.id}</span>
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Customer: {order.customerName || "—"} • {order.customerEmail || "—"}
+                      Customer: {order.customerName || "—"} •{" "}
+                      {order.customerEmail || "—"}
                     </div>
                     <div className="text-sm text-muted-foreground">
-                      Status: <span className="capitalize">{order.status || "pending"}</span> • Channel: {order.channel || "—"}
+                      Status:{" "}
+                      <span className="capitalize">
+                        {order.status || "pending"}
+                      </span>{" "}
+                      • Channel: {order.channel || "—"}
                     </div>
                   </div>
 
                   <div className="text-right">
                     <div className="text-sm text-muted-foreground">Total</div>
-                    <div className="text-2xl font-bold text-primary">{formatMoney(order.total)}</div>
+                    <div className="text-2xl font-bold text-primary">
+                      {formatMoney(order.total)}
+                    </div>
                   </div>
                 </div>
 
@@ -171,12 +196,20 @@ export default function AdminOrdersPage() {
                   </div>
                   <div className="space-y-2">
                     {(order.items || []).map((item: any, idx: number) => (
-                      <div key={`${order.id}-${idx}`} className="flex justify-between text-sm">
+                      <div
+                        key={`${order.id}-${idx}`}
+                        className="flex justify-between text-sm"
+                      >
                         <div>
-                          {item.name} <span className="text-muted-foreground">x{item.quantity}</span>
+                          {item.name}{" "}
+                          <span className="text-muted-foreground">
+                            x{item.quantity}
+                          </span>
                         </div>
                         <div className="font-semibold">
-                          {formatMoney((item.price || 0) * (item.quantity || 0))}
+                          {formatMoney(
+                            (item.price || 0) * (item.quantity || 0)
+                          )}
                         </div>
                       </div>
                     ))}
@@ -185,23 +218,41 @@ export default function AdminOrdersPage() {
 
                 {/* Actions */}
                 <div className="mt-5 flex flex-wrap gap-2">
-                  <Button variant="outline" onClick={() => copyWhatsAppReply(order)}>
+                  <Button
+                    variant="outline"
+                    onClick={() => copyWhatsAppReply(order)}
+                  >
                     Copy WhatsApp Payment Reply
                   </Button>
 
-                  <Button variant="outline" onClick={() => updateStatus(order.id, "confirmed")}>
+                  <Button
+                    variant="outline"
+                    onClick={() => updateStatus(order.id, "confirmed")}
+                  >
                     Mark Confirmed
                   </Button>
-                  <Button variant="outline" onClick={() => updateStatus(order.id, "paid")}>
+                  <Button
+                    variant="outline"
+                    onClick={() => updateStatus(order.id, "paid")}
+                  >
                     Mark Paid
                   </Button>
-                  <Button variant="outline" onClick={() => updateStatus(order.id, "shipped")}>
+                  <Button
+                    variant="outline"
+                    onClick={() => updateStatus(order.id, "shipped")}
+                  >
                     Mark Shipped
                   </Button>
-                  <Button variant="outline" onClick={() => updateStatus(order.id, "completed")}>
+                  <Button
+                    variant="outline"
+                    onClick={() => updateStatus(order.id, "completed")}
+                  >
                     Mark Completed
                   </Button>
-                  <Button variant="outline" onClick={() => updateStatus(order.id, "cancelled")}>
+                  <Button
+                    variant="outline"
+                    onClick={() => updateStatus(order.id, "cancelled")}
+                  >
                     Mark Cancelled
                   </Button>
                 </div>
